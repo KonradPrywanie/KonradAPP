@@ -17,9 +17,9 @@ ekranie głównym. Dev server po LAN pokaże układ, ale tych dwóch rzeczy nie 
 | Binarki dla Linuksa w lockfile | ✅ esbuild, rollup, tailwind-oxide, lightningcss |
 | Sekrety w repozytorium | ✅ brak — aplikacja nie ma kluczy API |
 | Tożsamość Gita | ✅ ustawiona **lokalnie w repo** (nie globalnie) |
-| Repozytorium Gita | ✅ gałąź `main`, pierwszy commit |
+| Repozytorium Gita | ✅ gałąź `main` |
 | Zdalne `origin` | ✅ `https://github.com/KonradPrywanie/KonradAPP.git` |
-| Wypchnięte na GitHub | ⬜ czeka na `git push -u origin main` |
+| Wypchnięte na GitHub | ✅ 2026-08-10, `main` śledzi `origin/main` |
 | Wdrożenie na Renderze | ⬜ blueprint trzeba wskazać na TO repozytorium |
 
 > **Uwaga na `KonradPrywanie/APKA`.** Ten adres należy do FitPlannera, projektu,
