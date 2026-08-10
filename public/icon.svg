@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="FITKonrad">
+  <rect width="512" height="512" rx="112" fill="#0f172a"/>
+  <!-- Linia trendu masy — motyw przewodni aplikacji. -->
+  <path d="M88 344 L184 288 L280 312 L376 176"
+        fill="none" stroke="#38bdf8" stroke-width="28"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="376" cy="176" r="30" fill="#38bdf8"/>
+  <rect x="88" y="392" width="336" height="24" rx="12" fill="#2f3d59"/>
+</svg>

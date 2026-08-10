@@ -1,0 +1,1972 @@
+{
+  "_opis": [
+    "Kolacje. Cel slotu: ~612 kcal (24% z 2550 kcal posiłków planowanych).",
+    "",
+    "Kolacja dostaje w tej bazie mniej węglowodanów skrobiowych niż obiad",
+    "i więcej białka wolno trawionego (twaróg, jajka, ryby) — nie z powodów",
+    "metabolicznych, bo dobowy bilans nie zna godziny, tylko dlatego, że tak",
+    "wygląda kolacja, którą ludzie faktycznie jedzą. Czas przygotowania trzymamy",
+    "poniżej pół godziny."
+  ],
+  "przepisy": [
+    {
+      "nazwa": "Sałatka z grillowanym kurczakiem i pieczywem",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "papryka wędzona",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kurczaka dopraw i zgrilluj na patelni grillowej, 5 minut z każdej strony.",
+        "Odstaw na 3 minuty i pokrój w plastry.",
+        "Wymieszaj sałatę z warzywami i fetą, polej oliwą z cytryną.",
+        "Podawaj z opieczonym chlebem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Omlet z warzywami i serem",
+      "skladniki": [
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 22
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Szczypiorek",
+          "ilosc": 9
+        }
+      ],
+      "przyprawy": [
+        "Sól",
+        "pieprz czarny",
+        "papryka słodka"
+      ],
+      "wykonanie": [
+        "Warzywa podsmaż na oliwie, aż odparuje z nich woda.",
+        "Zalej roztrzepanymi jajkami i smaż pod przykryciem 5 minut.",
+        "Posyp serem i szczypiorkiem, złóż na pół.",
+        "Podawaj z kromkami."
+      ],
+      "czasMin": 18
+    },
+    {
+      "nazwa": "Pieczony dorsz z warzywami i ziemniakami",
+      "skladniki": [
+        {
+          "produkt": "Dorsz filet",
+          "ilosc": 175
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 485
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 155
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "koperek",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki i cukinię pokrój, wymieszaj z oliwą i ziołami.",
+        "Piecz 20 minut w 200°C.",
+        "Dołóż dorsza i pomidorki, piecz jeszcze 14 minut.",
+        "Skrop cytryną przed podaniem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Twarożek z warzywami i pieczywem razowym",
+      "skladniki": [
+        {
+          "produkt": "Twaróg półtłusty",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Jogurt naturalny 2%",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Rzodkiewka",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 145
+        },
+        {
+          "produkt": "Szczypiorek",
+          "ilosc": 10
+        }
+      ],
+      "przyprawy": [
+        "Sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Twaróg rozetrzyj z jogurtem na gładko.",
+        "Wmieszaj posiekaną rzodkiewkę i szczypiorek, dopraw.",
+        "Podawaj z chlebem, ogórkiem i pomidorem."
+      ],
+      "czasMin": 10
+    },
+    {
+      "nazwa": "Sałatka z tuńczykiem, jajkiem i ziemniakami",
+      "skladniki": [
+        {
+          "produkt": "Tuńczyk w sosie własnym",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 330
+        },
+        {
+          "produkt": "Fasolka szparagowa",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Oliwki zielone",
+          "ilosc": 16
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Musztarda",
+        "oregano",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki ugotuj w mundurkach, fasolkę blanszuj 4 minuty.",
+        "Jajka ugotuj na twardo.",
+        "Ułóż na sałacie ziemniaki, fasolkę, tuńczyka, jajka i oliwki.",
+        "Polej sosem z oliwy, cytryny i musztardy."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Jajecznica z warzywami i chlebem",
+      "skladniki": [
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Masło",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Szczypiorek",
+          "ilosc": 8
+        }
+      ],
+      "przyprawy": [
+        "Sól",
+        "pieprz czarny",
+        "papryka wędzona"
+      ],
+      "wykonanie": [
+        "Na maśle zeszklij cebulę z papryką, dodaj pomidory i odparuj sok.",
+        "Wbij jajka i mieszaj, aż się zetną.",
+        "Posyp szczypiorkiem, podawaj z chlebem."
+      ],
+      "czasMin": 15
+    },
+    {
+      "nazwa": "Sałatka z łososiem wędzonym i kaszą",
+      "skladniki": [
+        {
+          "produkt": "Łosoś wędzony",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Kasza pęczak",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Rukola",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Awokado",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        },
+        {
+          "produkt": "Koperek świeży",
+          "ilosc": 11
+        }
+      ],
+      "przyprawy": [
+        "Kapary",
+        "pieprz czarny",
+        "sól morska"
+      ],
+      "wykonanie": [
+        "Kaszę ugotuj i ostudź.",
+        "Wymieszaj z rukolą, ogórkiem i plastrami awokado.",
+        "Ułóż łososia, skrop oliwą z cytryną, posyp koperkiem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Zapiekanka z kaszy z warzywami i serem",
+      "skladniki": [
+        {
+          "produkt": "Kasza gryczana",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 23
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "bazylia",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kaszę ugotuj, 15 minut.",
+        "Warzywa podsmaż na oliwie, wymieszaj z kaszą, passatą i roztrzepanymi jajkami.",
+        "Przełóż do naczynia, posyp serem.",
+        "Zapiekaj 20 minut w 190°C."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Kanapki z pastą z makreli i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Makrela wędzona",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Twaróg chudy",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Jogurt naturalny 2%",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 150
+        },
+        {
+          "produkt": "Ogórek kiszony",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Czerwona cebula",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Koperek",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Makrelę obierz ze skóry i ości, rozdrobnij.",
+        "Wymieszaj z twarogiem, jogurtem i cebulą, skrop cytryną.",
+        "Podawaj na kromkach z pomidorem i ogórkiem kiszonym."
+      ],
+      "czasMin": 15
+    },
+    {
+      "nazwa": "Sałatka z kurczakiem, awokado i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Awokado",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Musztarda",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kurczaka dopraw i usmaż, pokrój w plastry.",
+        "Jajka ugotuj na miękko i przekrój na pół.",
+        "Wymieszaj sałatę z pomidorkami i awokado, ułóż kurczaka i jajka.",
+        "Polej sosem z oliwy, cytryny i musztardy."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Placki z cukinii z twarożkiem",
+      "skladniki": [
+        {
+          "produkt": "Cukinia",
+          "ilosc": 200
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Mąka owsiana",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Twaróg chudy",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Koperek świeży",
+          "ilosc": 8
+        }
+      ],
+      "przyprawy": [
+        "Sól",
+        "pieprz czarny",
+        "czosnek granulowany"
+      ],
+      "wykonanie": [
+        "Cukinię zetrzyj, posól i odciśnij po 10 minutach.",
+        "Wymieszaj z jajkami, mąką i pokruszoną fetą.",
+        "Smaż placki na oleju po 3 minuty z każdej strony.",
+        "Podawaj z twarożkiem roztartym z jogurtem i koperkiem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Sałatka caprese z kurczakiem i chlebem",
+      "skladniki": [
+        {
+          "produkt": "Mozzarella light",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 175
+        },
+        {
+          "produkt": "Rukola",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Ocet balsamiczny",
+          "ilosc": 8
+        }
+      ],
+      "przyprawy": [
+        "Bazylia",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kurczaka zgrilluj i pokrój w plastry.",
+        "Ułóż naprzemiennie pomidory, mozzarellę i kurczaka.",
+        "Dodaj rukolę i bazylię, polej oliwą z balsamico.",
+        "Podawaj z opieczonym chlebem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Szakszuka wieczorna z fetą",
+      "skladniki": [
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 145
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Kmin rzymski",
+        "papryka słodka",
+        "chili",
+        "sól",
+        "pieprz"
+      ],
+      "wykonanie": [
+        "Na oliwie zeszklij cebulę z papryką i czosnkiem.",
+        "Dodaj pomidory i przyprawy, duś 10 minut.",
+        "Wbij jajka w zagłębienia, przykryj i gotuj 6 minut.",
+        "Pokrusz fetę, podawaj z chlebem."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Wrap z indykiem, warzywami i hummusem",
+      "skladniki": [
+        {
+          "produkt": "Tortilla pełnoziarnista",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Pierś z indyka",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Hummus klasyczny",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Papryka wędzona",
+        "kmin rzymski",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Indyka pokrój w paski, dopraw i usmaż na oliwie.",
+        "Tortillę podgrzej i posmaruj hummusem.",
+        "Ułóż sałatę, warzywa i indyka, zwiń ciasno."
+      ],
+      "czasMin": 18
+    },
+    {
+      "nazwa": "Zupa krem z brokułów z grzankami i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Brokuł",
+          "ilosc": 170
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 180
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Parmezan",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Gałka muszkatołowa",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Brokuł i ziemniaki ugotuj do miękkości, zmiksuj ze śmietanką.",
+        "Chleb pokrój w kostkę, skrop oliwą i podpiecz na grzanki.",
+        "Jajka ugotuj na miękko.",
+        "Podawaj zupę z jajkiem, grzankami i parmezanem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Twarożek z pieczonym burakiem i orzechami",
+      "skladniki": [
+        {
+          "produkt": "Twaróg chudy",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Burak gotowany",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Orzechy włoskie",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Rukola",
+          "ilosc": 22
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Chrzan",
+        "tymianek",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Twaróg rozetrzyj z jogurtem i chrzanem.",
+        "Buraki pokrój w kostkę.",
+        "Wyłóż twarożek, buraki, rukolę i orzechy, skrop oliwą.",
+        "Podawaj z chlebem."
+      ],
+      "czasMin": 12
+    },
+    {
+      "nazwa": "Pieczony pstrąg z sałatką ziemniaczaną",
+      "skladniki": [
+        {
+          "produkt": "Pstrąg filet",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 460
+        },
+        {
+          "produkt": "Ogórek kiszony",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Czerwona cebula",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Koperek świeży",
+          "ilosc": 13
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Musztarda",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki ugotuj w mundurkach, ostudź i pokrój.",
+        "Wymieszaj z jogurtem, musztardą, ogórkiem, cebulą i koperkiem.",
+        "Pstrąga dopraw, skrop cytryną i piecz 14 minut w 190°C."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Kanapki zapiekane z jajkiem i pomidorem",
+      "skladniki": [
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 20
+        },
+        {
+          "produkt": "Szynka z indyka",
+          "ilosc": 20
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 23
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "W naczyniu ułóż kromki, szynkę i plastry pomidora.",
+        "Zalej roztrzepanymi jajkami, posyp serem i oregano.",
+        "Zapiekaj 18 minut w 190°C. Podawaj z sałatą."
+      ],
+      "czasMin": 28
+    },
+    {
+      "nazwa": "Sałatka z fasolą, tuńczykiem i cebulą",
+      "skladniki": [
+        {
+          "produkt": "Fasola biała z puszki",
+          "ilosc": 240
+        },
+        {
+          "produkt": "Tuńczyk w sosie własnym",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Czerwona cebula",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Natka pietruszki",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Fasolę odsącz i przepłucz, tuńczyka rozdrobnij.",
+        "Wymieszaj z cebulą, pomidorkami i natką.",
+        "Polej oliwą z cytryną, dopraw. Podawaj z chlebem."
+      ],
+      "czasMin": 12
+    },
+    {
+      "nazwa": "Frittata z brokułem i serem",
+      "skladniki": [
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 150
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 22
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 270
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 30
+        }
+      ],
+      "przyprawy": [
+        "Gałka muszkatołowa",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki i brokuł ugotuj na półtwardo.",
+        "Podsmaż je z cebulą na oliwie.",
+        "Zalej roztrzepanymi jajkami, posyp serem i dopiecz pod przykryciem 10 minut.",
+        "Podawaj z sałatą."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Krewetki na sałacie z pieczywem czosnkowym",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Awokado",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        },
+        {
+          "produkt": "Sok z limonki"
+        }
+      ],
+      "przyprawy": [
+        "Chili",
+        "kolendra",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Chleb pokrój, skrop oliwą, natrzyj czosnkiem i podpiecz.",
+        "Krewetki smaż na oliwie z czosnkiem i chili, 2 minuty.",
+        "Wyłóż na sałatę z pomidorkami i awokado, skrop limonką."
+      ],
+      "czasMin": 18
+    },
+    {
+      "nazwa": "Tortilla zapiekana z kurczakiem i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Tortilla pełnoziarnista",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Salsa pomidorowa",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Kmin rzymski",
+        "papryka wędzona",
+        "chili",
+        "sól"
+      ],
+      "wykonanie": [
+        "Kurczaka i warzywa pokrój w paski, usmaż na oleju z przyprawami.",
+        "Nałóż na tortillę z salsą i serem, zwiń.",
+        "Zapiekaj 10 minut w 200°C. Podawaj z jogurtem."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Sałatka z jajkiem, szpinakiem i grzankami",
+      "skladniki": [
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Parmezan",
+          "ilosc": 11
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Musztarda",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Chleb pokrój w kostkę, skrop oliwą z czosnkiem i podpiecz.",
+        "Jajka ugotuj na miękko.",
+        "Wymieszaj szpinak z pomidorkami, dodaj grzanki i jajka.",
+        "Polej sosem z oliwy, cytryny i musztardy, posyp parmezanem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Kasza pęczak z pieczarkami i jajkiem sadzonym",
+      "skladniki": [
+        {
+          "produkt": "Kasza pęczak",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 22
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Natka pietruszki",
+          "ilosc": 9
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "majeranek",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kaszę ugotuj, 25 minut.",
+        "Pieczarki smaż na oliwie bez soli, aż się zarumienią, potem dodaj cebulę.",
+        "Wymieszaj z kaszą i serem.",
+        "Na wierzch jajka sadzone i natka."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Sałatka z indykiem, serem i winogronami",
+      "skladniki": [
+        {
+          "produkt": "Pierś z indyka",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 22
+        },
+        {
+          "produkt": "Winogrona",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Orzechy włoskie",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Musztarda",
+        "miód szczypta",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Indyka dopraw, usmaż i pokrój w kostkę.",
+        "Wymieszaj sałatę z winogronami, serem i orzechami.",
+        "Sos: jogurt, oliwa, musztarda. Podawaj z chlebem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Zapiekane bataty z jajkiem i szpinakiem",
+      "skladniki": [
+        {
+          "produkt": "Batat",
+          "ilosc": 315
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Papryka wędzona",
+        "tymianek",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Bataty pokrój w plastry, skrop oliwą i piecz 25 minut w 200°C.",
+        "Szpinak podduś z czosnkiem.",
+        "Rozłóż szpinak na batatach, zrób wgłębienia i wbij jajka.",
+        "Pokrusz fetę i dopiekaj 10 minut."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Kanapki z pastą z ciecierzycy i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Ciecierzyca z puszki",
+          "ilosc": 225
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Rukola",
+          "ilosc": 17
+        },
+        {
+          "produkt": "Sok z cytryny"
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Kmin rzymski",
+        "papryka wędzona",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ciecierzycę zmiksuj z jogurtem, oliwą, czosnkiem i cytryną.",
+        "Dopraw kminem i papryką.",
+        "Nałóż na kromki, obłóż warzywami i rukolą."
+      ],
+      "czasMin": 12
+    },
+    {
+      "nazwa": "Sałatka z serem feta, arbuzem i miętą",
+      "skladniki": [
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Mięta",
+        "oregano",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Jajka ugotuj na twardo.",
+        "Warzywa pokrój w kostkę, wymieszaj z sałatą i pokruszoną fetą.",
+        "Polej oliwą z cytryną, posyp miętą.",
+        "Podawaj z chlebem i jajkami."
+      ],
+      "czasMin": 15
+    },
+    {
+      "nazwa": "Kurczak duszony z warzywami i kaszą",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Kasza bulgur",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "papryka słodka",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Bulgur zalej wrzątkiem 1:2 i odstaw na 15 minut.",
+        "Kurczaka pokrój i obsmaż na oliwie z czosnkiem.",
+        "Dodaj warzywa i pomidory, duś 15 minut.",
+        "Podawaj z kaszą."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Twarożek z orzechami, miodem i pieczywem",
+      "skladniki": [
+        {
+          "produkt": "Twaróg półtłusty",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Orzechy włoskie",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 13
+        },
+        {
+          "produkt": "Gruszka",
+          "ilosc": 185
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 95
+        }
+      ],
+      "przyprawy": [
+        "Cynamon",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Twaróg rozetrzyj z jogurtem.",
+        "Wyłóż do miski, dodaj plastry gruszki i posiekane orzechy.",
+        "Polej miodem, oprósz cynamonem. Podawaj z chlebem."
+      ],
+      "czasMin": 10
+    },
+    {
+      "nazwa": "Omlet z łososiem wędzonym i szpinakiem",
+      "skladniki": [
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Łosoś wędzony",
+          "ilosc": 24
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Serek śmietankowy light",
+          "ilosc": 24
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Koperek",
+        "pieprz czarny",
+        "sól"
+      ],
+      "wykonanie": [
+        "Szpinak podduś na oliwie i odlej wodę.",
+        "Zalej roztrzepanymi jajkami, smaż pod przykryciem 5 minut.",
+        "Na połowę nałóż serek i łososia, złóż omlet.",
+        "Skrop cytryną, podawaj z chlebem."
+      ],
+      "czasMin": 18
+    },
+    {
+      "nazwa": "Sałatka z pieczoną dynią, fetą i komosą",
+      "skladniki": [
+        {
+          "produkt": "Dynia",
+          "ilosc": 220
+        },
+        {
+          "produkt": "Komosa ryżowa",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Rukola",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Pestki dyni",
+          "ilosc": 11
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "papryka wędzona",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Dynię pokrój w kostkę, wymieszaj z oliwą i tymiankiem, piecz 25 minut w 200°C.",
+        "Komosę ugotuj i ostudź, jajko ugotuj na miękko.",
+        "Wymieszaj komosę z rukolą i dynią, dodaj fetę i pestki.",
+        "Skrop cytryną, na wierzch przekrojone jajko."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Zapiekane ziemniaki z twarogiem i szczypiorkiem",
+      "skladniki": [
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 480
+        },
+        {
+          "produkt": "Twaróg chudy",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Szczypiorek",
+          "ilosc": 12
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 35
+        }
+      ],
+      "przyprawy": [
+        "Sól",
+        "pieprz czarny",
+        "papryka wędzona"
+      ],
+      "wykonanie": [
+        "Ziemniaki upiecz w mundurkach, 45 minut w 200°C.",
+        "Przekrój, rozgnieć środek widelcem.",
+        "Twaróg rozetrzyj z jogurtem i szczypiorkiem, nałóż na ziemniaki.",
+        "Posyp serem, zapiekaj 5 minut. Podawaj z sałatą."
+      ],
+      "czasMin": 55
+    },
+    {
+      "nazwa": "Sałatka z kurczakiem, ryżem i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Kukurydza konserwowa",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Curry",
+        "papryka wędzona",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj i ostudź.",
+        "Kurczaka dopraw curry, usmaż i pokrój.",
+        "Wymieszaj z warzywami i ryżem.",
+        "Sos: jogurt, oliwa, cytryna, sól, pieprz."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Grzanki z serem, pomidorem i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "bazylia",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kromki natrzyj czosnkiem, ułóż plastry pomidora i sera.",
+        "Zapiekaj 8 minut w 220°C, aż ser się rozpuści.",
+        "Jajka usmaż sadzone i ułóż na grzankach.",
+        "Podawaj z sałatą skropioną oliwą."
+      ],
+      "czasMin": 18
+    },
+    {
+      "nazwa": "Sałatka z tofu, warzywami i sezamem",
+      "skladniki": [
+        {
+          "produkt": "Tofu naturalne",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Makaron ryżowy",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 15
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z limonki"
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 7
+        }
+      ],
+      "przyprawy": [
+        "Sezam",
+        "chili",
+        "kolendra"
+      ],
+      "wykonanie": [
+        "Makaron ryżowy zalej wrzątkiem na 5 minut, odcedź i przelej zimną wodą.",
+        "Tofu odciśnij, pokrój w kostkę i obsmaż na oleju na chrupko.",
+        "Warzywa pokrój w cienkie paski.",
+        "Wymieszaj wszystko z sosem sojowym, imbirem i limonką, posyp sezamem."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Zupa jarzynowa z jajkiem i pieczywem",
+      "skladniki": [
+        {
+          "produkt": "Mieszanka warzyw mrożona",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 155
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Natka pietruszki",
+          "ilosc": 9
+        }
+      ],
+      "przyprawy": [
+        "Liść laurowy",
+        "ziele angielskie",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Warzywa i ziemniaki ugotuj w bulionie, 20 minut.",
+        "Zabiel śmietanką poza ogniem, dopraw i posyp natką.",
+        "Jajka ugotuj na twardo i pokrój.",
+        "Podawaj z jajkami i chlebem z serem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Kanapki z pastą z twarogu i wędzonej papryki",
+      "skladniki": [
+        {
+          "produkt": "Twaróg chudy",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Serek śmietankowy light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 155
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Szczypiorek",
+          "ilosc": 8
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Papryka wędzona",
+        "sól",
+        "pieprz czarny",
+        "czosnek granulowany"
+      ],
+      "wykonanie": [
+        "Twaróg zmiksuj z serkiem i wędzoną papryką na gładko.",
+        "Wmieszaj drobno pokrojoną paprykę i szczypiorek.",
+        "Rozsmaruj na kromkach, dodaj plastry ogórka, skrop oliwą."
+      ],
+      "czasMin": 12
+    },
+    {
+      "nazwa": "Sałatka z jajkiem, awokado i pieczywem chrupkim",
+      "skladniki": [
+        {
+          "produkt": "Jajko",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Awokado",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Pieczywo chrupkie żytnie",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Twaróg chudy",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Płatki chili",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Jajka ugotuj na miękko.",
+        "Awokado rozgnieć z twarogiem i cytryną, nałóż na pieczywo chrupkie.",
+        "Wymieszaj sałatę z pomidorkami, skrop oliwą.",
+        "Podawaj z jajkami i kanapkami."
+      ],
+      "czasMin": 15
+    },
+    {
+      "nazwa": "Pieczony schab z surówką i pieczywem",
+      "skladniki": [
+        {
+          "produkt": "Schab wieprzowy",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Jabłko",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Jogurt naturalny 2%",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Majeranek",
+        "czosnek granulowany",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Schab natrzyj przyprawami i oliwą, piecz 30 minut w 180°C.",
+        "Odstaw na 5 minut, potem pokrój w plastry.",
+        "Kapustę, marchew i jabłko poszatkuj, wymieszaj z jogurtem i cytryną.",
+        "Podawaj z chlebem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Makaron z brokułem, czosnkiem i parmezanem",
+      "skladniki": [
+        {
+          "produkt": "Makaron pełnoziarnisty",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 150
+        },
+        {
+          "produkt": "Parmezan",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Słonecznik łuskany",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Czosnek"
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Chili",
+        "pieprz czarny",
+        "sól"
+      ],
+      "wykonanie": [
+        "Makaron ugotuj al dente, w ostatnich 3 minutach dorzuć różyczki brokuła.",
+        "Na oliwie podsmaż czosnek z chili i pokrojonego kurczaka.",
+        "Wymieszaj z makaronem i brokułem, podlej wodą z gotowania.",
+        "Posyp parmezanem i podprażonym słonecznikiem, skrop cytryną."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Sałatka z wędzonym kurczakiem i pomarańczą",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Pomarańcza",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Orzechy nerkowca",
+          "ilosc": 11
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Ocet balsamiczny",
+          "ilosc": 8
+        }
+      ],
+      "przyprawy": [
+        "Papryka wędzona",
+        "musztarda",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kurczaka dopraw wędzoną papryką, usmaż i pokrój w plastry.",
+        "Pomarańczę obierz z błon i podziel na cząstki.",
+        "Wymieszaj sałatę z pomarańczą, fetą i orzechami.",
+        "Polej sosem z oliwy, balsamico i musztardy. Podawaj z chlebem."
+      ],
+      "czasMin": 20
+    }
+  ]
+}

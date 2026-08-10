@@ -1,0 +1,48 @@
+# Blueprint dla Render — https://render.com/docs/blueprint-spec
+#
+# FITKonrad to statyczna aplikacja: cała logika działa w przeglądarce,
+# dane siedzą w IndexedDB, nie ma backendu ani bazy po stronie serwera.
+# Dlatego `type: web` z serwerem Node byłby zbędnym kosztem — wystarczy
+# serwis statyczny, który Render udostępnia bezpłatnie i po HTTPS.
+#
+# HTTPS jest tu warunkiem koniecznym, nie wygodą: bez niego przeglądarka
+# nie zarejestruje service workera, więc na iPhonie nie zadziała ani tryb
+# offline, ani pełna instalacja PWA na ekranie głównym.
+services:
+  - type: web
+    runtime: static
+    name: fitkonrad
+    # Bez `region`: serwisy statyczne Render rozdaje przez CDN globalnie,
+    # a podanie regionu bywa odrzucane przy walidacji blueprintu.
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    # Każdy push na gałąź główną uruchamia nowy build i podmienia wersję
+    # pod tym samym adresem.
+    autoDeploy: true
+
+    headers:
+      # Service worker i manifest NIE mogą być cache'owane na długo —
+      # inaczej przeglądarka trzymałaby stary worker i aktualizacje
+      # aplikacji nie docierałyby do zainstalowanej PWA.
+      - path: /sw.js
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+      - path: /registerSW.js
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+      - path: /manifest.webmanifest
+        name: Cache-Control
+        value: no-cache
+      # Pliki z hashem w nazwie są niezmienne — można je cache'ować na rok.
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+
+    routes:
+      # PRZEPISANIE, nie przekierowanie. Aplikacja używa routingu po stronie
+      # klienta (react-router), więc wejście wprost na /postepy musi zwrócić
+      # index.html z kodem 200. Przekierowanie (redirect) zmieniłoby adres
+      # w pasku i zepsuło odświeżanie podstron.
+      - type: rewrite
+        source: /*
+        destination: /index.html

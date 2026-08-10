@@ -1,0 +1,16 @@
+# Końce linii.
+#
+# Repozytorium przechowuje LF i taki sam trafia do katalogu roboczego — także
+# na Windowsie. Bez tego Git konwertowałby pliki na CRLF przy każdym checkoutcie,
+# a Render (Linux) widziałby inne bajty niż maszyna lokalna: diffy pokazywałyby
+# zmiany w plikach, których nikt nie ruszał.
+* text=auto eol=lf
+
+# Binaria bez jakiejkolwiek konwersji.
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+# Arkusze źródłowe z `data-source/` — z nich generujemy przepisy i treningi.
+*.xlsx binary

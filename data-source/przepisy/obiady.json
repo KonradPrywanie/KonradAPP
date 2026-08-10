@@ -1,0 +1,2074 @@
+{
+  "_opis": [
+    "Obiady. Cel slotu: ~765 kcal (30% z 2550 kcal posiłków planowanych).",
+    "",
+    "To slot, w którym realnie stoi się przy garnkach, więc czas przygotowania",
+    "bywa dłuższy niż w pozostałych. Obiad jest też jedynym posiłkiem, który",
+    "przy gotowaniu na zapas powtarza się przez dwa dni (`BATCH_LUNCH_DAYS`) —",
+    "warto, żeby dania z tego slotu znosiły odgrzewanie."
+  ],
+  "przepisy": [
+    {
+      "nazwa": "Pierś z kurczaka w sosie pomidorowym z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 150
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Bazylia suszona",
+        "oregano",
+        "papryka słodka",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj w osolonej wodzie.",
+        "Kurczaka pokrój w kostkę i obsmaż na oliwie z cebulą i czosnkiem.",
+        "Dodaj cukinię w półplasterkach i pomidory z puszki.",
+        "Duś pod przykryciem 12 minut, dopraw ziołami. Podawaj z ryżem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Pieczony dorsz z ziemniakami i brokułem",
+      "skladniki": [
+        {
+          "produkt": "Dorsz filet",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 665
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 185
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Sok z cytryny"
+        },
+        {
+          "produkt": "Koperek świeży",
+          "ilosc": 9
+        }
+      ],
+      "przyprawy": [
+        "Rozmaryn",
+        "czosnek granulowany",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki pokrój w kliny, skrop połową oliwy, oprósz rozmarynem i piecz 25 minut w 200°C.",
+        "Dorsza dopraw solą, pieprzem i cytryną, piecz 15 minut zawinięty w folię.",
+        "Brokuł ugotuj na parze na chrupko.",
+        "Jogurt wymieszaj z koperkiem — to sos. Podawaj wszystko razem."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Zapiekane penne z indykiem i szpinakiem",
+      "skladniki": [
+        {
+          "produkt": "Makaron penne",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Mielona pierś z indyka",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Mozzarella light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Gałka muszkatołowa",
+        "oregano",
+        "pieprz cayenne",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Makaron ugotuj al dente — dojdzie jeszcze w piekarniku.",
+        "Indyka podsmaż na oliwie z czosnkiem, dodaj passatę i duś 8 minut.",
+        "Wmieszaj szpinak i makaron, przełóż do naczynia, posyp mozzarellą.",
+        "Zapiekaj 15 minut w 190°C."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Gulasz wołowy z kaszą pęczak",
+      "skladniki": [
+        {
+          "produkt": "Mielona wołowina 5%",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Kasza pęczak",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Papryka wędzona",
+        "majeranek",
+        "liść laurowy",
+        "ziele angielskie",
+        "sól",
+        "pieprz"
+      ],
+      "wykonanie": [
+        "Kaszę ugotuj w osolonej wodzie, 25 minut.",
+        "Mięso obsmaż na oleju na dużym ogniu, żeby się zarumieniło, a nie uwarzyło.",
+        "Dodaj warzywa i czosnek, po 5 minutach passatę i przyprawy.",
+        "Duś 20 minut pod przykryciem. Podawaj z kaszą."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Łosoś pieczony z batatami i fasolką",
+      "skladniki": [
+        {
+          "produkt": "Łosoś świeży",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Batat",
+          "ilosc": 555
+        },
+        {
+          "produkt": "Fasolka szparagowa",
+          "ilosc": 180
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "papryka wędzona",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Bataty pokrój w słupki, wymieszaj z połową oliwy i papryką, piecz 25 minut w 200°C.",
+        "Łososia dopraw i piecz 12 minut — dłużej wysuszy się i nic tego nie uratuje.",
+        "Fasolkę blanszuj 4 minuty, przelej zimną wodą.",
+        "Skrop wszystko cytryną i resztą oliwy."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Kotlety mielone z indyka z ziemniakami i surówką",
+      "skladniki": [
+        {
+          "produkt": "Mielona pierś z indyka",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Bułka tarta",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 450
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Jogurt naturalny 2%",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 35
+        }
+      ],
+      "przyprawy": [
+        "Majeranek",
+        "papryka słodka",
+        "sól",
+        "pieprz czarny",
+        "koperek"
+      ],
+      "wykonanie": [
+        "Mięso wymieszaj z jajkiem, bułką tartą, startą cebulą i przyprawami.",
+        "Uformuj kotlety i smaż na oleju po 4 minuty z każdej strony.",
+        "Ziemniaki ugotuj w osolonej wodzie.",
+        "Marchew zetrzyj, wymieszaj z jogurtem i koperkiem."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Curry z ciecierzycą, ryżem brązowym i szpinakiem",
+      "skladniki": [
+        {
+          "produkt": "Ciecierzyca z puszki",
+          "ilosc": 250
+        },
+        {
+          "produkt": "Ryż brązowy",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Curry",
+        "kurkuma",
+        "kmin rzymski",
+        "kolendra mielona",
+        "sól",
+        "chili"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj, 35 minut.",
+        "Na oleju zeszklij cebulę z imbirem i czosnkiem, wsyp przyprawy i praż 30 sekund — sucha przyprawa na gorącym tłuszczu oddaje aromat, w sosie już nie.",
+        "Dodaj pomidory i ciecierzycę, duś 12 minut.",
+        "Wmieszaj szpinak, zdejmij z ognia, podawaj z ryżem i jogurtem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Schab duszony w sosie własnym z kaszą gryczaną",
+      "skladniki": [
+        {
+          "produkt": "Schab wieprzowy",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Kasza gryczana",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Ogórek kiszony",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Majeranek",
+        "liść laurowy",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kaszę ugotuj w osolonej wodzie, 15 minut, i odstaw pod przykryciem.",
+        "Schab pokrój w plastry, rozbij i obsmaż na oleju z dwóch stron.",
+        "Dodaj cebulę i pieczarki, podlej wodą i duś 25 minut pod przykryciem.",
+        "Na koniec wmieszaj śmietankę. Podawaj z kaszą i ogórkiem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Makaron pełnoziarnisty z kurczakiem i pesto",
+      "skladniki": [
+        {
+          "produkt": "Makaron pełnoziarnisty",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Pesto zielone bazyliowe",
+          "ilosc": 12
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Parmezan",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Bazylia",
+        "pieprz czarny",
+        "sól"
+      ],
+      "wykonanie": [
+        "Makaron ugotuj al dente, zachowaj pół szklanki wody z gotowania.",
+        "Kurczaka pokrój w paski i usmaż na oliwie.",
+        "Wymieszaj makaron z pesto, rozcieńczając wodą z gotowania na gładki sos.",
+        "Dodaj kurczaka, pomidorki i szpinak, posyp parmezanem."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Chili con carne z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Mielona wołowina 5%",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Fasola czerwona z puszki",
+          "ilosc": 185
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Kukurydza konserwowa",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Kmin rzymski",
+        "chili",
+        "papryka wędzona",
+        "oregano",
+        "sól",
+        "pieprz"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj osobno.",
+        "Mięso obsmaż z cebulą i czosnkiem, dodaj przyprawy.",
+        "Wlej pomidory, dorzuć paprykę, fasolę i kukurydzę.",
+        "Duś 25 minut na małym ogniu — im dłużej, tym lepiej. Podawaj z ryżem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Pieczony pstrąg z komosą i pieczonymi warzywami",
+      "skladniki": [
+        {
+          "produkt": "Pstrąg filet",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Komosa ryżowa",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Czerwona cebula",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "rozmaryn",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Komosę przepłucz i ugotuj w podwójnej objętości wody, 15 minut.",
+        "Warzywa pokrój w kostkę, wymieszaj z połową oliwy i ziołami, piecz 20 minut w 200°C.",
+        "Pstrąga dopraw, skrop cytryną i piecz 12 minut obok warzyw.",
+        "Wymieszaj komosę z warzywami, na wierzch ryba."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Leczo z indykiem i kaszą bulgur",
+      "skladniki": [
+        {
+          "produkt": "Pierś z indyka",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Kasza bulgur",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 150
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Papryka słodka",
+        "papryka ostra",
+        "majeranek",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Bulgur zalej wrzątkiem 1:2 i odstaw pod przykryciem na 15 minut.",
+        "Indyka pokrój w kostkę i obsmaż na oleju.",
+        "Dodaj cebulę, czosnek, paprykę i cukinię, po 5 minutach pomidory.",
+        "Duś 15 minut, dopraw. Podawaj z bulgurem."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Zapiekanka ziemniaczana z mielonym i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 505
+        },
+        {
+          "produkt": "Mielona pierś z indyka",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Groszek zielony",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Ser żółty light",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Mleko 2%",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 40
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "gałka muszkatołowa",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki ugotuj i utłucz z mlekiem na purée.",
+        "Mięso podsmaż z cebulą i marchewką, dodaj groszek i przyprawy.",
+        "Przełóż mięso do naczynia, przykryj purée, posyp serem.",
+        "Zapiekaj 20 minut w 190°C."
+      ],
+      "czasMin": 50
+    },
+    {
+      "nazwa": "Kurczak teriyaki z ryżem i warzywami stir-fry",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Sos teriyaki",
+          "ilosc": 23
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Sezam",
+        "chili",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj.",
+        "Kurczaka pokrój w paski i smaż na mocno rozgrzanym oleju 4 minuty.",
+        "Dodaj warzywa w słupkach, imbir i czosnek — smaż krótko, mają zostać chrupiące.",
+        "Wlej teriyaki, wymieszaj i zdejmij z ognia. Podawaj z ryżem, posyp sezamem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Zupa gulaszowa z wołowiną i ziemniakami",
+      "skladniki": [
+        {
+          "produkt": "Mielona wołowina 5%",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 395
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Papryka wędzona",
+        "kminek",
+        "majeranek",
+        "liść laurowy",
+        "sól",
+        "pieprz"
+      ],
+      "wykonanie": [
+        "Mięso obsmaż na oleju, dodaj cebulę i czosnek.",
+        "Wsyp paprykę wędzoną i praż chwilę, potem zalej wodą.",
+        "Dodaj ziemniaki, marchew, paprykę i passatę, gotuj 25 minut.",
+        "Dopraw i podawaj z kromką chleba."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Polędwiczka wieprzowa z puree i buraczkami",
+      "skladniki": [
+        {
+          "produkt": "Polędwiczka wieprzowa",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 555
+        },
+        {
+          "produkt": "Burak gotowany",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Mleko 2%",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Masło",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Jogurt naturalny 2%",
+          "ilosc": 35
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "chrzan",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Polędwiczkę obsmaż na oleju ze wszystkich stron i dopiecz 12 minut w 180°C.",
+        "Odstaw ją na 5 minut przed krojeniem, inaczej soki wypłyną na deskę.",
+        "Ziemniaki utłucz z mlekiem i masłem.",
+        "Buraczki zetrzyj, wymieszaj z jogurtem i chrzanem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Risotto z kurczakiem i pieczarkami",
+      "skladniki": [
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 215
+        },
+        {
+          "produkt": "Parmezan",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Natka pietruszki",
+          "ilosc": 8
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Cebulę zeszklij na oliwie, dodaj ryż i chwilę praż.",
+        "Wlewaj bulion po chochli, mieszając, aż ryż wchłonie płyn.",
+        "Osobno usmaż kurczaka i pieczarki, dorzuć do ryżu pod koniec.",
+        "Wmieszaj parmezan i natkę."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Pieczony sandacz z kaszą pęczak i szpinakiem",
+      "skladniki": [
+        {
+          "produkt": "Sandacz filet",
+          "ilosc": 145
+        },
+        {
+          "produkt": "Kasza pęczak",
+          "ilosc": 155
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Gałka muszkatołowa",
+        "koperek",
+        "sól morska",
+        "pieprz biały"
+      ],
+      "wykonanie": [
+        "Kaszę ugotuj, 25 minut.",
+        "Sandacza dopraw, skrop cytryną i piecz 14 minut w 190°C.",
+        "Szpinak podduś na oliwie z czosnkiem, wmieszaj śmietankę i gałkę.",
+        "Podawaj rybę na kaszy, obok szpinak."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Bigos lekki z indykiem i ziemniakami",
+      "skladniki": [
+        {
+          "produkt": "Pierś z indyka",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Kapusta kiszona",
+          "ilosc": 245
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 520
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 65
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Kminek",
+        "liść laurowy",
+        "ziele angielskie",
+        "majeranek",
+        "pieprz",
+        "sól"
+      ],
+      "wykonanie": [
+        "Kapustę kiszoną przepłucz, jeśli jest bardzo kwaśna, i posiekaj.",
+        "Indyka obsmaż na oleju z cebulą.",
+        "Dodaj obie kapusty, passatę i przyprawy, duś 30 minut pod przykryciem.",
+        "Ziemniaki ugotuj osobno."
+      ],
+      "czasMin": 50
+    },
+    {
+      "nazwa": "Makaron z tuńczykiem, oliwkami i pomidorami",
+      "skladniki": [
+        {
+          "produkt": "Makaron pełnoziarnisty",
+          "ilosc": 155
+        },
+        {
+          "produkt": "Tuńczyk w sosie własnym",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 155
+        },
+        {
+          "produkt": "Oliwki zielone",
+          "ilosc": 16
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Natka pietruszki",
+          "ilosc": 8
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "chili",
+        "kapary",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Makaron ugotuj al dente.",
+        "Na oliwie zeszklij cebulę z czosnkiem i chili, dodaj pomidory i oliwki.",
+        "Duś 10 minut, wmieszaj odsączonego tuńczyka i zdejmij z ognia.",
+        "Połącz z makaronem, posyp natką."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Kurczak pieczony z warzywami korzeniowymi",
+      "skladniki": [
+        {
+          "produkt": "Udko z kurczaka bez skóry",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 495
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Por",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Rozmaryn",
+        "tymianek",
+        "papryka słodka",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Warzywa pokrój w duże kawałki, wymieszaj z oliwą i ziołami.",
+        "Ułóż na blasze, na wierzchu udka doprawione papryką.",
+        "Piecz 45 minut w 190°C, po 25 minutach przemieszaj warzywa.",
+        "Podawaj prosto z blachy."
+      ],
+      "czasMin": 55
+    },
+    {
+      "nazwa": "Soczewica po indyjsku z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Soczewica czerwona",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Pomidory krojone z puszki",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Kurkuma",
+        "kmin rzymski",
+        "kolendra",
+        "garam masala",
+        "sól",
+        "chili"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj.",
+        "Na oleju praż przyprawy z cebulą, imbirem i czosnkiem, 1 minutę.",
+        "Dodaj soczewicę, marchew i pomidory, zalej wodą i gotuj 20 minut.",
+        "Podawaj z ryżem i łyżką jogurtu."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Klopsiki w sosie pomidorowym z makaronem",
+      "skladniki": [
+        {
+          "produkt": "Mielona pierś z indyka",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Bułka tarta",
+          "ilosc": 20
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Makaron penne",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Parmezan",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "bazylia",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Mięso wymieszaj z jajkiem, bułką tartą i przyprawami, uformuj klopsiki.",
+        "Obsmaż je na oliwie, odłóż.",
+        "Na tej samej patelni zeszklij cebulę z czosnkiem, wlej passatę, włóż klopsiki i duś 15 minut.",
+        "Podawaj z makaronem, posyp parmezanem."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Krewetki z makaronem ryżowym i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Makaron ryżowy",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 18
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z limonki"
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 7
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Chili",
+        "kolendra",
+        "sezam"
+      ],
+      "wykonanie": [
+        "Makaron ryżowy zalej wrzątkiem na 5 minut i odcedź.",
+        "Na woku rozgrzej olej, wrzuć imbir, czosnek i warzywa, smaż 3 minuty.",
+        "Dodaj krewetki i smaż 2 minuty — dłużej zrobią się gumowe.",
+        "Wmieszaj makaron i sos sojowy, skrop limonką."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Pierś z indyka w sosie musztardowym z kaszą",
+      "skladniki": [
+        {
+          "produkt": "Pierś z indyka",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Kasza pęczak",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Musztarda",
+          "ilosc": 17
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 180
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "estragon",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Kaszę ugotuj, 25 minut.",
+        "Indyka pokrój w plastry i obsmaż z cebulą.",
+        "Podlej wodą, duś 10 minut, potem wmieszaj śmietankę z musztardą.",
+        "Brokuł ugotuj na parze. Podawaj razem."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Zapiekany makaron z tofu i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Makaron pełnoziarnisty",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Tofu naturalne",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Mozzarella light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "bazylia",
+        "papryka wędzona",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Tofu odciśnij z wody i pokrój w kostkę, obsmaż na oliwie z wędzoną papryką.",
+        "Makaron ugotuj al dente.",
+        "Warzywa podduś z czosnkiem, wlej passatę, wymieszaj z makaronem i tofu.",
+        "Posyp mozzarellą i zapiekaj 15 minut w 190°C."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Gołąbki bezmięsne z kaszą i sosem pomidorowym",
+      "skladniki": [
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 220
+        },
+        {
+          "produkt": "Kasza gryczana",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Mielona pierś z indyka",
+          "ilosc": 95
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 160
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Majeranek",
+        "liść laurowy",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Liście kapusty sparz wrzątkiem, żeby dały się zwinąć.",
+        "Kaszę ugotuj, wymieszaj z podsmażonym mięsem, pieczarkami i cebulą.",
+        "Zawiń farsz w liście, ułóż w garnku, zalej passatą z wodą.",
+        "Duś 30 minut pod przykryciem."
+      ],
+      "czasMin": 55
+    },
+    {
+      "nazwa": "Kurczak po grecku z ziemniakami i fetą",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 570
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 135
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Oliwki zielone",
+          "ilosc": 16
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "tymianek",
+        "sól morska",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki pokrój w ćwiartki, wymieszaj z oliwą, oregano i czosnkiem.",
+        "Ułóż na blasze z kurczakiem i pomidorkami, skrop cytryną.",
+        "Piecz 35 minut w 200°C.",
+        "Na 5 minut przed końcem pokrusz fetę i dorzuć oliwki."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Zupa krem z dyni z grzankami i pestkami",
+      "skladniki": [
+        {
+          "produkt": "Dynia",
+          "ilosc": 365
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 210
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Chleb pełnoziarnisty",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Pestki dyni",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Curry",
+        "gałka muszkatołowa",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Dynię, ziemniaki i marchew ugotuj do miękkości i zmiksuj ze śmietanką.",
+        "Kurczaka pokrój w kostkę, dopraw curry i usmaż na oliwie.",
+        "Chleb pokrój w kostkę i podpiecz na grzanki.",
+        "Zupę podawaj z kurczakiem, grzankami i pestkami."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Wołowina po burgundzku z ziemniakami",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 550
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Tymianek",
+        "liść laurowy",
+        "ziele angielskie",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Wołowinę pokrój w kostkę i obsmaż partiami na mocnym ogniu — wrzucona naraz zacznie się dusić.",
+        "Dodaj cebulę, marchew, pieczarki i czosnek.",
+        "Wlej passatę i wodę do przykrycia, duś 60 minut na małym ogniu.",
+        "Ziemniaki ugotuj osobno."
+      ],
+      "czasMin": 80
+    },
+    {
+      "nazwa": "Ryba po grecku z dorsza z ziemniakami",
+      "skladniki": [
+        {
+          "produkt": "Dorsz filet",
+          "ilosc": 155
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 205
+        },
+        {
+          "produkt": "Seler naciowy",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 550
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Liść laurowy",
+        "ziele angielskie",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Marchew i seler zetrzyj na grubych oczkach, duś z cebulą na oleju 15 minut.",
+        "Dodaj passatę i przyprawy, duś jeszcze 5 minut.",
+        "Dorsza dopraw i usmaż albo upiecz, ułóż pod warstwą warzyw.",
+        "Odstaw na godzinę — na zimno smakuje lepiej niż zaraz po zrobieniu. Podawaj z ziemniakami."
+      ],
+      "czasMin": 45,
+      "uwagaCzasowa": "+godzina chłodzenia"
+    },
+    {
+      "nazwa": "Kurczak w sosie curry z ryżem i groszkiem",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 115
+        },
+        {
+          "produkt": "Groszek zielony",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Mleko 2%",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Curry",
+        "kurkuma",
+        "kolendra",
+        "sól",
+        "chili"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj.",
+        "Kurczaka pokrój w kostkę, obsmaż na oleju i odłóż.",
+        "Zeszklij cebulę z imbirem i czosnkiem, wsyp przyprawy, wlej mleko.",
+        "Włóż kurczaka i groszek, duś 10 minut. Podawaj z ryżem."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Placki ziemniaczane z gulaszem z indyka",
+      "skladniki": [
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 465
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Mąka pszenna pełnoziarnista",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Pierś z indyka",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Majeranek",
+        "papryka wędzona",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ziemniaki zetrzyj na drobnych oczkach i odciśnij z wody.",
+        "Wymieszaj z jajkiem, mąką i solą, smaż cienkie placki.",
+        "Indyka duś z cebulą, papryką i passatą 20 minut.",
+        "Podawaj gulasz na plackach."
+      ],
+      "czasMin": 50
+    },
+    {
+      "nazwa": "Sałatka obiadowa z grillowanym kurczakiem i komosą",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Komosa ryżowa",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Mix sałat",
+          "ilosc": 45
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Awokado",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Papryka wędzona",
+        "oregano",
+        "sól morska",
+        "pieprz czarny",
+        "musztarda"
+      ],
+      "wykonanie": [
+        "Komosę ugotuj i ostudź.",
+        "Kurczaka dopraw i zgrilluj na patelni grillowej, pokrój w plastry.",
+        "Wymieszaj sałatę, warzywa i komosę.",
+        "Sos: oliwa, cytryna, musztarda, sól, pieprz. Polej i wymieszaj."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Pieczony bakłażan faszerowany mielonym",
+      "skladniki": [
+        {
+          "produkt": "Bakłażan",
+          "ilosc": 300
+        },
+        {
+          "produkt": "Mielona wołowina 5%",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 110
+        },
+        {
+          "produkt": "Mozzarella light",
+          "ilosc": 25
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "cynamon",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Bakłażany przekrój wzdłuż, wydrąż miąższ i posól — po 10 minutach odsącz gorzki sok.",
+        "Ryż ugotuj. Mięso podsmaż z cebulą, czosnkiem i miąższem bakłażana.",
+        "Dodaj passatę i przyprawy, wymieszaj z ryżem i nałóż do łódeczek.",
+        "Posyp mozzarellą i piecz 30 minut w 190°C."
+      ],
+      "czasMin": 55
+    },
+    {
+      "nazwa": "Kurczak z brokułem i ryżem w sosie sojowym",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 105
+        },
+        {
+          "produkt": "Ryż brązowy",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 205
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 15
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Sezam",
+        "chili",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Ryż brązowy ugotuj, 35 minut.",
+        "Kurczaka pokrój w kostkę i obsmaż na mocnym ogniu.",
+        "Dodaj brokuł w różyczkach, marchew, imbir i czosnek, smaż 5 minut.",
+        "Wlej sos sojowy, wymieszaj z ryżem, posyp sezamem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Zupa pomidorowa z ryżem i kurczakiem",
+      "skladniki": [
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 220
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 75
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70
+        },
+        {
+          "produkt": "Seler naciowy",
+          "ilosc": 35
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 23
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Natka pietruszki",
+          "ilosc": 8
+        }
+      ],
+      "przyprawy": [
+        "Liść laurowy",
+        "ziele angielskie",
+        "cukier szczypta",
+        "sól",
+        "pieprz"
+      ],
+      "wykonanie": [
+        "Kurczaka ugotuj z marchewką i selerem — to jest wywar.",
+        "Wyjmij mięso, pokrój i odłóż. Do wywaru wlej passatę i zagotuj.",
+        "Ryż ugotuj osobno, żeby nie rozgotował się w zupie.",
+        "Zabiel śmietanką POZA ogniem, wsyp ryż, mięso i natkę. Podawaj z chlebem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Kotlet schabowy pieczony z kaszą i surówką",
+      "skladniki": [
+        {
+          "produkt": "Schab wieprzowy",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Bułka tarta",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Kasza pęczak",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Jogurt naturalny 2%",
+          "ilosc": 40
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        }
+      ],
+      "przyprawy": [
+        "Papryka słodka",
+        "sól",
+        "pieprz czarny",
+        "koperek"
+      ],
+      "wykonanie": [
+        "Schab rozbij, dopraw, obtocz w jajku i bułce tartej.",
+        "Skrop olejem i piecz 25 minut w 200°C, obracając raz — pieczony bierze kilka razy mniej tłuszczu niż smażony.",
+        "Kaszę ugotuj.",
+        "Kapustę i marchew poszatkuj, wymieszaj z jogurtem i koperkiem."
+      ],
+      "czasMin": 45
+    },
+    {
+      "nazwa": "Makaron z warzywami i serem feta",
+      "skladniki": [
+        {
+          "produkt": "Makaron pełnoziarnisty",
+          "ilosc": 145
+        },
+        {
+          "produkt": "Ser feta light",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Cukinia",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Pomidorki koktajlowe",
+          "ilosc": 130
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 85
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 60
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Oregano",
+        "bazylia",
+        "chili",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Warzywa i kurczaka ułóż w naczyniu, w środek połóż fetę, skrop oliwą i posyp ziołami.",
+        "Piecz 25 minut w 200°C.",
+        "Makaron ugotuj al dente.",
+        "Rozgnieć fetę widelcem z pieczonymi warzywami — to jest sos. Wymieszaj z makaronem."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Fasolka po bretońsku z kiełbaską drobiową",
+      "skladniki": [
+        {
+          "produkt": "Fasola biała z puszki",
+          "ilosc": 340
+        },
+        {
+          "produkt": "Polędwica z indyka",
+          "ilosc": 55
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 125
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Chleb żytni razowy",
+          "ilosc": 100
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Czosnek"
+        }
+      ],
+      "przyprawy": [
+        "Majeranek",
+        "papryka wędzona",
+        "liść laurowy",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Cebulę zeszklij na oleju, dodaj pokrojoną polędwicę i czosnek.",
+        "Wlej passatę, dodaj odsączoną fasolę i przyprawy.",
+        "Duś 20 minut, aż sos zgęstnieje.",
+        "Podawaj z chlebem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Łosoś w sosie koperkowym z ziemniakami",
+      "skladniki": [
+        {
+          "produkt": "Łosoś świeży",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 590
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 140
+        },
+        {
+          "produkt": "Jogurt grecki 0%",
+          "ilosc": 80
+        },
+        {
+          "produkt": "Śmietanka 12%",
+          "ilosc": 21
+        },
+        {
+          "produkt": "Koperek świeży",
+          "ilosc": 14
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Sól morska",
+        "pieprz biały",
+        "musztarda"
+      ],
+      "wykonanie": [
+        "Ziemniaki ugotuj w osolonej wodzie z koperkiem.",
+        "Łososia dopraw i usmaż na oliwie skórą do dołu, 4 minuty, potem 2 minuty na drugiej stronie.",
+        "Sos: jogurt, śmietanka, koperek, musztarda, cytryna, pieprz.",
+        "Podawaj z mizerią z ogórka."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Kurczak z kuskusem i pieczoną dynią",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 90
+        },
+        {
+          "produkt": "Kuskus pełnoziarnisty",
+          "ilosc": 120
+        },
+        {
+          "produkt": "Dynia",
+          "ilosc": 185
+        },
+        {
+          "produkt": "Czerwona cebula",
+          "ilosc": 50
+        },
+        {
+          "produkt": "Rukola",
+          "ilosc": 30
+        },
+        {
+          "produkt": "Oliwa z oliwek",
+          "ilosc": 5
+        },
+        {
+          "produkt": "Migdały",
+          "ilosc": 10
+        },
+        {
+          "produkt": "Sok z cytryny"
+        }
+      ],
+      "przyprawy": [
+        "Ras el hanout",
+        "kmin rzymski",
+        "cynamon",
+        "sól",
+        "pieprz czarny"
+      ],
+      "wykonanie": [
+        "Dynię i cebulę pokrój, wymieszaj z oliwą i przyprawami, piecz 25 minut w 200°C.",
+        "Kuskus zalej wrzątkiem 1:1 i odstaw pod przykryciem na 6 minut.",
+        "Kurczaka dopraw i usmaż, pokrój w plastry.",
+        "Wymieszaj kuskus z dynią i rukolą, na wierzch kurczak, migdały i cytryna."
+      ],
+      "czasMin": 40
+    }
+  ]
+}

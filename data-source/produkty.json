@@ -1,0 +1,1129 @@
+{
+  "_opis": [
+    "Tabela produktów — wartości odżywcze na 100 g produktu w stanie, w jakim jest",
+    "podany w przepisie (kasze, ryż i makarony: SUCHE).",
+    "",
+    "To jest źródło prawdy dla makra przepisów. FitPlanner, z którego ta aplikacja",
+    "wyrosła, miał odwrotnie: makro było podane wprost w arkuszu trenera, a bazy",
+    "produktów świadomie NIE BYŁO — bo policzenie makra ze składników dałoby drugą,",
+    "inną prawdę o tym samym obiedzie. Tutaj nie ma zewnętrznego arkusza do",
+    "uszanowania, więc kierunek jest odwrotny i lepszy: makro LICZY SIĘ ze",
+    "składników, jedną drogą. Dzięki temu zmiana gramatury nie może rozjechać się",
+    "z kaloriami, a importer potrafi dobrać wielkość porcji pod cel slotu.",
+    "",
+    "WĘGLOWODANY SĄ WYLICZONE Z KALORII: `wegle = (kcal - 4*bialko - 9*tluszcz) / 4`.",
+    "Wartości wprost z tabel żywieniowych tego równania NIE spełniają, bo błonnik",
+    "liczy się w węglowodanach, a daje około 2 kcal na gram, nie 4 — brokuł podany",
+    "jako 34 kcal wychodzi z makra na 43. Rozjazd sięgał 29% i byłby widoczny",
+    "w aplikacji: karta posiłku pokazuje kalorie I gramy makroskładników obok siebie.",
+    "Kaloryczność zostaje ta z tabel (jest dokładniejsza), a węglowodany stają się",
+    "resztą budżetu — czyli węglowodanem przyswajalnym. To ta sama konwencja,",
+    "w której liczy `domain/calc/macros.ts`.",
+    "",
+    "Produkty w jednostce 'piece' mają 'gramyNaSztuke' — przelicznik na gramy,",
+    "z których liczy się makro. Bez niego 'jajko' nie ma jak wejść do sumy.",
+    "",
+    "'minGram' to najmniejsza ilość, jaką ma sens odmierzyć. Importer nie zejdzie",
+    "poniżej niej przy dobieraniu porcji — bez tej podłogi wychodziła 'oliwa 2 g'."
+  ],
+  "produkty": [
+    {
+      "nazwa": "Pierś z kurczaka",
+      "kcal": 165,
+      "bialko": 31.0,
+      "tluszcz": 3.6,
+      "wegle": 2.2
+    },
+    {
+      "nazwa": "Udko z kurczaka bez skóry",
+      "kcal": 175,
+      "bialko": 24.0,
+      "tluszcz": 8.0,
+      "wegle": 1.8
+    },
+    {
+      "nazwa": "Pierś z indyka",
+      "kcal": 157,
+      "bialko": 29.0,
+      "tluszcz": 4.0,
+      "wegle": 1.2
+    },
+    {
+      "nazwa": "Mielona pierś z indyka",
+      "kcal": 150,
+      "bialko": 27.0,
+      "tluszcz": 4.5,
+      "wegle": 0.4
+    },
+    {
+      "nazwa": "Mielona wołowina 5%",
+      "kcal": 137,
+      "bialko": 21.0,
+      "tluszcz": 5.0,
+      "wegle": 2.0
+    },
+    {
+      "nazwa": "Rostbef wołowy",
+      "kcal": 150,
+      "bialko": 26.0,
+      "tluszcz": 5.0,
+      "wegle": 0.2
+    },
+    {
+      "nazwa": "Schab wieprzowy",
+      "kcal": 143,
+      "bialko": 21.0,
+      "tluszcz": 6.0,
+      "wegle": 1.2
+    },
+    {
+      "nazwa": "Polędwiczka wieprzowa",
+      "kcal": 120,
+      "bialko": 22.0,
+      "tluszcz": 3.5,
+      "wegle": 0.1
+    },
+    {
+      "nazwa": "Szynka z indyka",
+      "kcal": 105,
+      "bialko": 18.0,
+      "tluszcz": 3.0,
+      "wegle": 1.5
+    },
+    {
+      "nazwa": "Polędwica z indyka",
+      "kcal": 95,
+      "bialko": 19.0,
+      "tluszcz": 1.5,
+      "wegle": 1.4
+    },
+    {
+      "nazwa": "Szynka wieprzowa gotowana",
+      "kcal": 130,
+      "bialko": 18.0,
+      "tluszcz": 6.0,
+      "wegle": 1.0
+    },
+    {
+      "nazwa": "Dorsz filet",
+      "kcal": 82,
+      "bialko": 18.0,
+      "tluszcz": 0.7,
+      "wegle": 0.9
+    },
+    {
+      "nazwa": "Mintaj filet",
+      "kcal": 72,
+      "bialko": 16.0,
+      "tluszcz": 0.9,
+      "wegle": 0.0
+    },
+    {
+      "nazwa": "Sandacz filet",
+      "kcal": 84,
+      "bialko": 19.0,
+      "tluszcz": 0.7,
+      "wegle": 0.4
+    },
+    {
+      "nazwa": "Łosoś świeży",
+      "kcal": 208,
+      "bialko": 20.0,
+      "tluszcz": 13.0,
+      "wegle": 2.8
+    },
+    {
+      "nazwa": "Łosoś wędzony",
+      "kcal": 180,
+      "bialko": 22.0,
+      "tluszcz": 10.0,
+      "wegle": 0.5
+    },
+    {
+      "nazwa": "Pstrąg filet",
+      "kcal": 148,
+      "bialko": 21.0,
+      "tluszcz": 7.0,
+      "wegle": 0.2
+    },
+    {
+      "nazwa": "Makrela wędzona",
+      "kcal": 250,
+      "bialko": 21.0,
+      "tluszcz": 18.0,
+      "wegle": 1.0
+    },
+    {
+      "nazwa": "Tuńczyk w sosie własnym",
+      "kcal": 108,
+      "bialko": 24.0,
+      "tluszcz": 1.0,
+      "wegle": 0.8
+    },
+    {
+      "nazwa": "Krewetki",
+      "kcal": 85,
+      "bialko": 18.0,
+      "tluszcz": 1.0,
+      "wegle": 1.0
+    },
+    {
+      "nazwa": "Jajko",
+      "kcal": 139,
+      "bialko": 12.6,
+      "tluszcz": 9.5,
+      "wegle": 0.8,
+      "jednostka": "piece",
+      "gramyNaSztuke": 56
+    },
+    {
+      "nazwa": "Białko jaja",
+      "kcal": 52,
+      "bialko": 11.0,
+      "tluszcz": 0.2,
+      "wegle": 1.6
+    },
+    {
+      "nazwa": "Twaróg chudy",
+      "kcal": 99,
+      "bialko": 19.8,
+      "tluszcz": 0.5,
+      "wegle": 3.8
+    },
+    {
+      "nazwa": "Twaróg półtłusty",
+      "kcal": 133,
+      "bialko": 18.0,
+      "tluszcz": 5.0,
+      "wegle": 4.0
+    },
+    {
+      "nazwa": "Serek wiejski light",
+      "kcal": 79,
+      "bialko": 12.0,
+      "tluszcz": 2.0,
+      "wegle": 3.2
+    },
+    {
+      "nazwa": "Skyr naturalny",
+      "kcal": 63,
+      "bialko": 11.0,
+      "tluszcz": 0.2,
+      "wegle": 4.3
+    },
+    {
+      "nazwa": "Jogurt grecki 0%",
+      "kcal": 59,
+      "bialko": 10.0,
+      "tluszcz": 0.4,
+      "wegle": 3.9
+    },
+    {
+      "nazwa": "Jogurt naturalny 2%",
+      "kcal": 60,
+      "bialko": 4.3,
+      "tluszcz": 2.0,
+      "wegle": 6.2
+    },
+    {
+      "nazwa": "Kefir 2%",
+      "kcal": 51,
+      "bialko": 3.3,
+      "tluszcz": 2.0,
+      "wegle": 4.9,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Maślanka naturalna",
+      "kcal": 40,
+      "bialko": 3.4,
+      "tluszcz": 0.5,
+      "wegle": 5.5,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Mleko 2%",
+      "kcal": 50,
+      "bialko": 3.3,
+      "tluszcz": 2.0,
+      "wegle": 4.7,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Mleko migdałowe bez cukru",
+      "kcal": 15,
+      "bialko": 0.5,
+      "tluszcz": 1.2,
+      "wegle": 0.6,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Ser żółty light",
+      "kcal": 250,
+      "bialko": 30.0,
+      "tluszcz": 13.0,
+      "wegle": 3.2,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Mozzarella light",
+      "kcal": 165,
+      "bialko": 20.0,
+      "tluszcz": 9.0,
+      "wegle": 1.0,
+      "minGram": 20
+    },
+    {
+      "nazwa": "Ser feta light",
+      "kcal": 200,
+      "bialko": 15.0,
+      "tluszcz": 14.0,
+      "wegle": 3.5,
+      "minGram": 20
+    },
+    {
+      "nazwa": "Parmezan",
+      "kcal": 392,
+      "bialko": 36.0,
+      "tluszcz": 27.0,
+      "wegle": 1.2,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Serek śmietankowy light",
+      "kcal": 130,
+      "bialko": 8.0,
+      "tluszcz": 9.0,
+      "wegle": 4.2,
+      "minGram": 20
+    },
+    {
+      "nazwa": "Śmietanka 12%",
+      "kcal": 130,
+      "bialko": 3.0,
+      "tluszcz": 12.0,
+      "wegle": 2.5,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Masło",
+      "kcal": 735,
+      "bialko": 0.7,
+      "tluszcz": 82.0,
+      "wegle": 0.0,
+      "minGram": 4
+    },
+    {
+      "nazwa": "Chleb żytni razowy",
+      "kcal": 250,
+      "bialko": 8.0,
+      "tluszcz": 1.5,
+      "wegle": 51.1
+    },
+    {
+      "nazwa": "Chleb pełnoziarnisty",
+      "kcal": 247,
+      "bialko": 9.0,
+      "tluszcz": 3.0,
+      "wegle": 46.0
+    },
+    {
+      "nazwa": "Bułka grahamka",
+      "kcal": 260,
+      "bialko": 9.0,
+      "tluszcz": 2.0,
+      "wegle": 51.5
+    },
+    {
+      "nazwa": "Tortilla pełnoziarnista",
+      "kcal": 300,
+      "bialko": 9.0,
+      "tluszcz": 6.0,
+      "wegle": 52.5
+    },
+    {
+      "nazwa": "Pieczywo chrupkie żytnie",
+      "kcal": 330,
+      "bialko": 10.0,
+      "tluszcz": 1.5,
+      "wegle": 69.1
+    },
+    {
+      "nazwa": "Bułka tarta",
+      "kcal": 350,
+      "bialko": 11.0,
+      "tluszcz": 3.0,
+      "wegle": 69.8,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Ryż basmati",
+      "kcal": 350,
+      "bialko": 8.0,
+      "tluszcz": 1.0,
+      "wegle": 77.2
+    },
+    {
+      "nazwa": "Ryż brązowy",
+      "kcal": 355,
+      "bialko": 8.0,
+      "tluszcz": 3.0,
+      "wegle": 74.0
+    },
+    {
+      "nazwa": "Makaron pełnoziarnisty",
+      "kcal": 340,
+      "bialko": 13.0,
+      "tluszcz": 2.5,
+      "wegle": 66.4
+    },
+    {
+      "nazwa": "Makaron penne",
+      "kcal": 355,
+      "bialko": 12.0,
+      "tluszcz": 1.5,
+      "wegle": 73.4
+    },
+    {
+      "nazwa": "Makaron ryżowy",
+      "kcal": 360,
+      "bialko": 6.0,
+      "tluszcz": 0.5,
+      "wegle": 82.9
+    },
+    {
+      "nazwa": "Kasza pęczak",
+      "kcal": 340,
+      "bialko": 10.0,
+      "tluszcz": 1.5,
+      "wegle": 71.6
+    },
+    {
+      "nazwa": "Kasza gryczana",
+      "kcal": 336,
+      "bialko": 12.0,
+      "tluszcz": 3.0,
+      "wegle": 65.2
+    },
+    {
+      "nazwa": "Kasza jaglana",
+      "kcal": 346,
+      "bialko": 10.0,
+      "tluszcz": 3.0,
+      "wegle": 69.8
+    },
+    {
+      "nazwa": "Kasza bulgur",
+      "kcal": 342,
+      "bialko": 12.0,
+      "tluszcz": 1.5,
+      "wegle": 70.1
+    },
+    {
+      "nazwa": "Kuskus pełnoziarnisty",
+      "kcal": 360,
+      "bialko": 12.0,
+      "tluszcz": 0.6,
+      "wegle": 76.7
+    },
+    {
+      "nazwa": "Komosa ryżowa",
+      "kcal": 368,
+      "bialko": 14.0,
+      "tluszcz": 6.0,
+      "wegle": 64.5
+    },
+    {
+      "nazwa": "Płatki owsiane",
+      "kcal": 372,
+      "bialko": 13.0,
+      "tluszcz": 7.0,
+      "wegle": 64.2
+    },
+    {
+      "nazwa": "Płatki żytnie",
+      "kcal": 340,
+      "bialko": 11.0,
+      "tluszcz": 2.0,
+      "wegle": 69.5
+    },
+    {
+      "nazwa": "Mąka owsiana",
+      "kcal": 370,
+      "bialko": 13.0,
+      "tluszcz": 7.0,
+      "wegle": 63.8
+    },
+    {
+      "nazwa": "Mąka pszenna pełnoziarnista",
+      "kcal": 340,
+      "bialko": 12.0,
+      "tluszcz": 2.0,
+      "wegle": 68.5
+    },
+    {
+      "nazwa": "Otręby owsiane",
+      "kcal": 320,
+      "bialko": 15.0,
+      "tluszcz": 6.0,
+      "wegle": 51.5
+    },
+    {
+      "nazwa": "Ziemniaki",
+      "kcal": 77,
+      "bialko": 2.0,
+      "tluszcz": 0.1,
+      "wegle": 17.0
+    },
+    {
+      "nazwa": "Batat",
+      "kcal": 86,
+      "bialko": 1.6,
+      "tluszcz": 0.1,
+      "wegle": 19.7
+    },
+    {
+      "nazwa": "Brokuł",
+      "kcal": 34,
+      "bialko": 2.8,
+      "tluszcz": 0.4,
+      "wegle": 4.8
+    },
+    {
+      "nazwa": "Kalafior",
+      "kcal": 25,
+      "bialko": 1.9,
+      "tluszcz": 0.3,
+      "wegle": 3.7
+    },
+    {
+      "nazwa": "Cukinia",
+      "kcal": 17,
+      "bialko": 1.2,
+      "tluszcz": 0.3,
+      "wegle": 2.4
+    },
+    {
+      "nazwa": "Bakłażan",
+      "kcal": 25,
+      "bialko": 1.0,
+      "tluszcz": 0.2,
+      "wegle": 4.8
+    },
+    {
+      "nazwa": "Marchew",
+      "kcal": 41,
+      "bialko": 0.9,
+      "tluszcz": 0.2,
+      "wegle": 8.9
+    },
+    {
+      "nazwa": "Papryka czerwona",
+      "kcal": 31,
+      "bialko": 1.0,
+      "tluszcz": 0.3,
+      "wegle": 6.1
+    },
+    {
+      "nazwa": "Pomidor",
+      "kcal": 18,
+      "bialko": 0.9,
+      "tluszcz": 0.2,
+      "wegle": 3.1
+    },
+    {
+      "nazwa": "Pomidorki koktajlowe",
+      "kcal": 20,
+      "bialko": 0.9,
+      "tluszcz": 0.2,
+      "wegle": 3.6
+    },
+    {
+      "nazwa": "Pomidory krojone z puszki",
+      "kcal": 32,
+      "bialko": 1.5,
+      "tluszcz": 0.2,
+      "wegle": 6.0
+    },
+    {
+      "nazwa": "Passata pomidorowa",
+      "kcal": 35,
+      "bialko": 1.5,
+      "tluszcz": 0.2,
+      "wegle": 6.8
+    },
+    {
+      "nazwa": "Ogórek świeży",
+      "kcal": 15,
+      "bialko": 0.7,
+      "tluszcz": 0.1,
+      "wegle": 2.8
+    },
+    {
+      "nazwa": "Ogórek kiszony",
+      "kcal": 12,
+      "bialko": 0.6,
+      "tluszcz": 0.1,
+      "wegle": 2.2
+    },
+    {
+      "nazwa": "Cebula",
+      "kcal": 40,
+      "bialko": 1.1,
+      "tluszcz": 0.1,
+      "wegle": 8.7
+    },
+    {
+      "nazwa": "Czerwona cebula",
+      "kcal": 40,
+      "bialko": 1.1,
+      "tluszcz": 0.1,
+      "wegle": 8.7
+    },
+    {
+      "nazwa": "Por",
+      "kcal": 61,
+      "bialko": 1.5,
+      "tluszcz": 0.3,
+      "wegle": 13.1
+    },
+    {
+      "nazwa": "Seler naciowy",
+      "kcal": 16,
+      "bialko": 0.7,
+      "tluszcz": 0.2,
+      "wegle": 2.8
+    },
+    {
+      "nazwa": "Szpinak świeży",
+      "kcal": 23,
+      "bialko": 2.9,
+      "tluszcz": 0.4,
+      "wegle": 2.0
+    },
+    {
+      "nazwa": "Mix sałat",
+      "kcal": 15,
+      "bialko": 1.4,
+      "tluszcz": 0.2,
+      "wegle": 1.9
+    },
+    {
+      "nazwa": "Rukola",
+      "kcal": 25,
+      "bialko": 2.6,
+      "tluszcz": 0.7,
+      "wegle": 2.1
+    },
+    {
+      "nazwa": "Pieczarki",
+      "kcal": 22,
+      "bialko": 3.1,
+      "tluszcz": 0.3,
+      "wegle": 1.7
+    },
+    {
+      "nazwa": "Fasolka szparagowa",
+      "kcal": 31,
+      "bialko": 1.8,
+      "tluszcz": 0.1,
+      "wegle": 5.7
+    },
+    {
+      "nazwa": "Groszek zielony",
+      "kcal": 81,
+      "bialko": 5.4,
+      "tluszcz": 0.4,
+      "wegle": 13.9
+    },
+    {
+      "nazwa": "Kukurydza konserwowa",
+      "kcal": 86,
+      "bialko": 3.0,
+      "tluszcz": 1.2,
+      "wegle": 15.8
+    },
+    {
+      "nazwa": "Burak gotowany",
+      "kcal": 43,
+      "bialko": 1.6,
+      "tluszcz": 0.2,
+      "wegle": 8.7
+    },
+    {
+      "nazwa": "Kapusta pekińska",
+      "kcal": 16,
+      "bialko": 1.2,
+      "tluszcz": 0.2,
+      "wegle": 2.3
+    },
+    {
+      "nazwa": "Kapusta kiszona",
+      "kcal": 19,
+      "bialko": 1.0,
+      "tluszcz": 0.1,
+      "wegle": 3.5
+    },
+    {
+      "nazwa": "Dynia",
+      "kcal": 26,
+      "bialko": 1.0,
+      "tluszcz": 0.1,
+      "wegle": 5.3
+    },
+    {
+      "nazwa": "Mieszanka warzyw mrożona",
+      "kcal": 45,
+      "bialko": 2.5,
+      "tluszcz": 0.4,
+      "wegle": 7.8
+    },
+    {
+      "nazwa": "Awokado",
+      "kcal": 160,
+      "bialko": 2.0,
+      "tluszcz": 15.0,
+      "wegle": 4.2,
+      "minGram": 30
+    },
+    {
+      "nazwa": "Rzodkiewka",
+      "kcal": 16,
+      "bialko": 0.7,
+      "tluszcz": 0.1,
+      "wegle": 3.1
+    },
+    {
+      "nazwa": "Czosnek",
+      "kcal": 149,
+      "bialko": 6.4,
+      "tluszcz": 0.5,
+      "wegle": 29.7
+    },
+    {
+      "nazwa": "Szczypiorek",
+      "kcal": 30,
+      "bialko": 3.3,
+      "tluszcz": 0.7,
+      "wegle": 2.6,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Natka pietruszki",
+      "kcal": 36,
+      "bialko": 3.0,
+      "tluszcz": 0.8,
+      "wegle": 4.2,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Koperek świeży",
+      "kcal": 43,
+      "bialko": 3.5,
+      "tluszcz": 1.1,
+      "wegle": 4.8,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Imbir świeży",
+      "kcal": 80,
+      "bialko": 1.8,
+      "tluszcz": 0.8,
+      "wegle": 16.4,
+      "minGram": 5
+    },
+    {
+      "nazwa": "Sok z cytryny",
+      "kcal": 22,
+      "bialko": 0.4,
+      "tluszcz": 0.2,
+      "wegle": 4.6,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Sok z limonki",
+      "kcal": 25,
+      "bialko": 0.4,
+      "tluszcz": 0.1,
+      "wegle": 5.6,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Banan",
+      "kcal": 89,
+      "bialko": 1.1,
+      "tluszcz": 0.3,
+      "wegle": 20.5
+    },
+    {
+      "nazwa": "Jabłko",
+      "kcal": 52,
+      "bialko": 0.3,
+      "tluszcz": 0.2,
+      "wegle": 12.2
+    },
+    {
+      "nazwa": "Gruszka",
+      "kcal": 57,
+      "bialko": 0.4,
+      "tluszcz": 0.1,
+      "wegle": 13.6
+    },
+    {
+      "nazwa": "Truskawki",
+      "kcal": 32,
+      "bialko": 0.7,
+      "tluszcz": 0.3,
+      "wegle": 6.6
+    },
+    {
+      "nazwa": "Maliny",
+      "kcal": 52,
+      "bialko": 1.2,
+      "tluszcz": 0.7,
+      "wegle": 10.2
+    },
+    {
+      "nazwa": "Borówki amerykańskie",
+      "kcal": 57,
+      "bialko": 0.7,
+      "tluszcz": 0.3,
+      "wegle": 12.9
+    },
+    {
+      "nazwa": "Wiśnie mrożone",
+      "kcal": 50,
+      "bialko": 1.0,
+      "tluszcz": 0.3,
+      "wegle": 10.8
+    },
+    {
+      "nazwa": "Kiwi",
+      "kcal": 61,
+      "bialko": 1.1,
+      "tluszcz": 0.5,
+      "wegle": 13.0
+    },
+    {
+      "nazwa": "Mango",
+      "kcal": 60,
+      "bialko": 0.8,
+      "tluszcz": 0.4,
+      "wegle": 13.3
+    },
+    {
+      "nazwa": "Pomarańcza",
+      "kcal": 47,
+      "bialko": 0.9,
+      "tluszcz": 0.1,
+      "wegle": 10.6
+    },
+    {
+      "nazwa": "Brzoskwinia",
+      "kcal": 39,
+      "bialko": 0.9,
+      "tluszcz": 0.3,
+      "wegle": 8.2
+    },
+    {
+      "nazwa": "Ananas",
+      "kcal": 50,
+      "bialko": 0.5,
+      "tluszcz": 0.1,
+      "wegle": 11.8
+    },
+    {
+      "nazwa": "Winogrona",
+      "kcal": 69,
+      "bialko": 0.7,
+      "tluszcz": 0.2,
+      "wegle": 16.1
+    },
+    {
+      "nazwa": "Rodzynki",
+      "kcal": 299,
+      "bialko": 3.0,
+      "tluszcz": 0.5,
+      "wegle": 70.6,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Daktyle suszone",
+      "kcal": 282,
+      "bialko": 2.5,
+      "tluszcz": 0.4,
+      "wegle": 67.1,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Ciecierzyca z puszki",
+      "kcal": 120,
+      "bialko": 7.0,
+      "tluszcz": 2.0,
+      "wegle": 18.5
+    },
+    {
+      "nazwa": "Fasola czerwona z puszki",
+      "kcal": 110,
+      "bialko": 7.0,
+      "tluszcz": 0.5,
+      "wegle": 19.4
+    },
+    {
+      "nazwa": "Fasola biała z puszki",
+      "kcal": 105,
+      "bialko": 7.0,
+      "tluszcz": 0.5,
+      "wegle": 18.1
+    },
+    {
+      "nazwa": "Soczewica czerwona",
+      "kcal": 350,
+      "bialko": 25.0,
+      "tluszcz": 1.5,
+      "wegle": 59.1
+    },
+    {
+      "nazwa": "Tofu naturalne",
+      "kcal": 130,
+      "bialko": 14.0,
+      "tluszcz": 8.0,
+      "wegle": 0.5
+    },
+    {
+      "nazwa": "Hummus klasyczny",
+      "kcal": 230,
+      "bialko": 7.0,
+      "tluszcz": 17.0,
+      "wegle": 12.2,
+      "minGram": 30
+    },
+    {
+      "nazwa": "Masło orzechowe 100%",
+      "kcal": 600,
+      "bialko": 25.0,
+      "tluszcz": 50.0,
+      "wegle": 12.5,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Orzechy włoskie",
+      "kcal": 654,
+      "bialko": 15.0,
+      "tluszcz": 65.0,
+      "wegle": 2.2,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Migdały",
+      "kcal": 579,
+      "bialko": 21.0,
+      "tluszcz": 50.0,
+      "wegle": 11.2,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Orzechy nerkowca",
+      "kcal": 553,
+      "bialko": 18.0,
+      "tluszcz": 44.0,
+      "wegle": 21.2,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Nasiona chia",
+      "kcal": 486,
+      "bialko": 17.0,
+      "tluszcz": 31.0,
+      "wegle": 34.8,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Siemię lniane mielone",
+      "kcal": 534,
+      "bialko": 18.0,
+      "tluszcz": 42.0,
+      "wegle": 21.0,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Pestki dyni",
+      "kcal": 559,
+      "bialko": 30.0,
+      "tluszcz": 49.0,
+      "wegle": 0.0,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Słonecznik łuskany",
+      "kcal": 584,
+      "bialko": 21.0,
+      "tluszcz": 51.0,
+      "wegle": 10.2,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Wiórki kokosowe",
+      "kcal": 660,
+      "bialko": 7.0,
+      "tluszcz": 65.0,
+      "wegle": 11.8,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Oliwa z oliwek",
+      "kcal": 884,
+      "bialko": 0.0,
+      "tluszcz": 100.0,
+      "wegle": 0.0,
+      "minGram": 5
+    },
+    {
+      "nazwa": "Olej rzepakowy",
+      "kcal": 884,
+      "bialko": 0.0,
+      "tluszcz": 100.0,
+      "wegle": 0.0,
+      "minGram": 5
+    },
+    {
+      "nazwa": "Pesto zielone bazyliowe",
+      "kcal": 450,
+      "bialko": 5.0,
+      "tluszcz": 45.0,
+      "wegle": 6.2,
+      "minGram": 12
+    },
+    {
+      "nazwa": "Sos sojowy",
+      "kcal": 60,
+      "bialko": 6.0,
+      "tluszcz": 0.0,
+      "wegle": 9.0,
+      "jednostka": "ml",
+      "minGram": 10
+    },
+    {
+      "nazwa": "Sos teriyaki",
+      "kcal": 130,
+      "bialko": 3.0,
+      "tluszcz": 0.0,
+      "wegle": 29.5,
+      "jednostka": "ml",
+      "minGram": 10
+    },
+    {
+      "nazwa": "Ketchup",
+      "kcal": 100,
+      "bialko": 1.2,
+      "tluszcz": 0.2,
+      "wegle": 23.4,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Musztarda",
+      "kcal": 66,
+      "bialko": 4.0,
+      "tluszcz": 3.5,
+      "wegle": 4.6,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Majonez light",
+      "kcal": 300,
+      "bialko": 1.0,
+      "tluszcz": 30.0,
+      "wegle": 6.5,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Salsa pomidorowa",
+      "kcal": 35,
+      "bialko": 1.4,
+      "tluszcz": 0.2,
+      "wegle": 6.9
+    },
+    {
+      "nazwa": "Bulion warzywny",
+      "kcal": 4,
+      "bialko": 0.2,
+      "tluszcz": 0.1,
+      "wegle": 0.6,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Oliwki zielone",
+      "kcal": 145,
+      "bialko": 1.0,
+      "tluszcz": 15.0,
+      "wegle": 1.5,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Dżem 100% owoców",
+      "kcal": 165,
+      "bialko": 0.5,
+      "tluszcz": 0.2,
+      "wegle": 40.3,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Ocet balsamiczny",
+      "kcal": 88,
+      "bialko": 0.5,
+      "tluszcz": 0.0,
+      "wegle": 21.5,
+      "jednostka": "ml",
+      "minGram": 8
+    },
+    {
+      "nazwa": "Miód",
+      "kcal": 320,
+      "bialko": 0.3,
+      "tluszcz": 0.0,
+      "wegle": 79.7,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Syrop klonowy",
+      "kcal": 260,
+      "bialko": 0.0,
+      "tluszcz": 0.0,
+      "wegle": 65.0,
+      "jednostka": "ml",
+      "minGram": 8
+    },
+    {
+      "nazwa": "Erytrytol",
+      "kcal": 0,
+      "bialko": 0.0,
+      "tluszcz": 0.0,
+      "wegle": 0.0,
+      "minGram": 5
+    },
+    {
+      "nazwa": "Kakao odtłuszczone",
+      "kcal": 300,
+      "bialko": 22.0,
+      "tluszcz": 10.0,
+      "wegle": 30.5,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Odżywka białkowa WPC",
+      "kcal": 380,
+      "bialko": 78.0,
+      "tluszcz": 6.0,
+      "wegle": 3.5,
+      "minGram": 20
+    },
+    {
+      "nazwa": "Czekolada gorzka 70%",
+      "kcal": 550,
+      "bialko": 8.0,
+      "tluszcz": 40.0,
+      "wegle": 39.5,
+      "minGram": 10
+    }
+  ]
+}

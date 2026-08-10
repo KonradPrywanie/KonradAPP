@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #0f172a;
+  --color-surface: #1a2337;
+  --color-surface-2: #243149;
+  --color-border: #2f3d59;
+  --color-accent: #38bdf8;
+  --color-accent-strong: #0ea5e9;
+  --color-text: #e6ecf7;
+  --color-text-dim: #94a3b8;
+  --color-warn: #fbbf24;
+  --color-danger: #f87171;
+  --color-ok: #4ade80;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  /* Bezpieczne marginesy dla notcha na iPhonie w trybie standalone. */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Wyłącza „bounce" przy przewijaniu w PWA na iOS. */
+body {
+  overscroll-behavior-y: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px; /* poniżej 16px iOS Safari zoomuje przy fokusie */
+}
+
+/*
+ * Druk — świadomy zamiennik generowania PDF.
+ *
+ * Lista zakupów i plan tygodnia to jedyne rzeczy, które ktoś chce mieć na
+ * papierze. Dialog druku przeglądarki potrafi zapisać do PDF, więc biblioteka
+ * typu jsPDF dokładałaby ~150 kB do bundla i drugi silnik układu treści
+ * bez żadnego zysku. Elementy interaktywne oznaczamy `print:hidden`.
+ */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+    padding: 0;
+  }
+
+  main {
+    padding-bottom: 0 !important;
+  }
+
+  /* Ciemne tła kart znikają — inaczej drukarka zużywa cały toner. */
+  [class*='bg-\\[var\\(--color-surface'] {
+    background: #fff !important;
+    border-color: #999 !important;
+  }
+
+  /* Pozycja listy nie powinna się rozjeżdżać między stronami. */
+  li,
+  h2 {
+    break-inside: avoid;
+  }
+
+  h2 {
+    break-after: avoid;
+  }
+}
