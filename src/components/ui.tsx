@@ -278,7 +278,13 @@ export function Callout({
 }: {
   tone?: 'info' | 'warn' | 'danger'
   title?: string
-  children: ReactNode
+  /**
+   * Treść jest OPCJONALNA — są ostrzeżenia, których cała wiadomość mieści się
+   * w tytule („Jadłospis daje 2804 z 3000 kcal"). Wtedy nie renderujemy pustego
+   * bloku ani dolnego marginesu tytułu, bo inaczej ramka miałaby pod tekstem
+   * wolne miejsce i wyglądałaby jak komunikat, któremu nie doczytała się treść.
+   */
+  children?: ReactNode
 }) {
   const color = {
     info: 'var(--color-accent)',
@@ -292,11 +298,11 @@ export function Callout({
       style={{ borderLeftColor: color }}
     >
       {title && (
-        <p className="mb-1 font-semibold" style={{ color }}>
+        <p className={`font-semibold ${children ? 'mb-1' : ''}`} style={{ color }}>
           {title}
         </p>
       )}
-      <div className="text-[var(--color-text-dim)]">{children}</div>
+      {children && <div className="text-[var(--color-text-dim)]">{children}</div>}
     </div>
   )
 }

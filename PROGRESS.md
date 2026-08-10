@@ -163,9 +163,18 @@ Karta „jadłospis pod celem" ([DietDayPanel](src/features/diet/DietDayPanel.ts
 i ostrzeżenie po wygenerowaniu tygodnia ([GenerateCards](src/features/shared/GenerateCards.tsx))
 mówiły o bazie na **1600 kcal**, **trzech posiłkach** i skalowaniu **±20%** —
 czyli o poprzednim projekcie. Pierwszy radził wprost „ustaw ręczny cel kaloryczny
-1600 kcal w profilu", co przy tej bazie zepsułoby dietę. Teraz oba podają
-prawdziwe liczby (2750 kcal, cztery posiłki plus rezerwa, ±25%, zakres
-2110–3385 kcal) i odsyłają do presetów 2500/3000, pod które baza jest napisana.
+1600 kcal w profilu", co przy tej bazie zepsułoby dietę.
+
+Najpierw dostały prawdziwe liczby (2750 kcal, cztery posiłki plus rezerwa, ±25%,
+zakres 2110–3385 kcal), a potem — po zobaczeniu ich w działającej aplikacji —
+**straciły całą treść i został sam tytuł**: „Jadłospis daje 2804 z 3000 kcal"
+i „3 z 7 dni wychodzi pod celem kalorycznym". Powód jest mocniejszy niż długość
+tekstu: jedyna rada, jaką te akapity dawały, to „wybierz preset 2500 albo 3000",
+a ostrzeżenie pokazuje się WŁAŚNIE przy włączonym presecie — odsyłało więc do
+ustawienia, które użytkownik już ma. Reszta akapitu opisywała zakres bazy, czyli
+przyczynę niezmienną i tę samą pod każdym wygenerowanym tygodniem. Liczba, ile
+brakuje, jest jedyną informacją, która się zmienia, więc jest jedyną, która
+została; `Callout` przyjmuje teraz `children` jako opcjonalne.
 
 Wniosek na przyszłość: przy forku najgroźniejsze są nie funkcje, tylko **teksty
 tłumaczące, dlaczego coś działa tak, a nie inaczej**. Kod przestaje pasować

@@ -145,9 +145,11 @@ export function DietDayPanel({
   /**
    * Suma zaplanowanych posiłków plus rezerwa na przekąskę.
    *
-   * Gdy wychodzi wyraźnie pod celem, to nie błąd wyliczeń, a sufit bazy
-   * przepisów — i użytkownik musi to wiedzieć TU, patrząc na jadłospis,
-   * nie tylko w momencie generowania tygodnia.
+   * Gdy wychodzi wyraźnie pod celem, widać to TU, przy jadłospisie, a nie
+   * tylko w momencie generowania tygodnia. Komunikat podaje same liczby:
+   * przyczyna jest zawsze ta sama (sufit bazy przepisów), a rada „zmień
+   * preset" była nieprawdziwa dokładnie wtedy, gdy ostrzeżenie się pokazuje —
+   * przy 3000 kcal odsyłała do presetu 3000, który jest już włączony.
    */
   const plannedKcal =
     data.meals.reduce((sum, meal) => sum + meal.computed.kcal, 0) + SWEET_SNACK.kcal
@@ -183,13 +185,7 @@ export function DietDayPanel({
       <ConsumedCard logs={data.logs} targets={targets} />
 
       {shortfall > targets.kcal * 0.05 && (
-        <Callout tone="warn" title={`Jadłospis daje ${plannedKcal} z ${targets.kcal} kcal`}>
-          Brakuje {shortfall} kcal. Baza przepisów jest pisana pod około 2750 kcal dziennie
-          (cztery posiłki plus rezerwa na przekąskę), a porcje skalujemy najwyżej o 25% — czyli
-          sięga od ~2110 do ~3385 kcal. Przy celu spoza tego zakresu nie ma czym dobić.
-          Możesz dojeść poza planem („Zjadłem coś innego") albo wybrać w profilu jeden z presetów
-          2500 / 3000 kcal — pod nie ta baza jest napisana i przy nich dzień trafia w cel.
-        </Callout>
+        <Callout tone="warn" title={`Jadłospis daje ${plannedKcal} z ${targets.kcal} kcal`} />
       )}
 
       <div className="grid gap-2">

@@ -323,18 +323,17 @@ export function DietSetupCard({
         </div>
       )}
 
-      {/* Sufit bazy przepisów — mówimy o nim wprost, zamiast pokazywać
-          „plan wykonany", po którym brakuje dwustu kalorii. */}
+      {/* Sufit bazy przepisów — liczba dni pod celem zamiast „plan wykonany",
+          po którym brakuje dwustu kalorii. Sama liczba wchodzi do TYTUŁU, bo
+          to jedyna treść tego ostrzeżenia: wyjaśnianie zakresu bazy pod każdym
+          wygenerowanym tygodniem powtarzało to samo akapitem, a jedyna rada,
+          jaką dawało („wybierz preset"), przy włączonym presecie była pusta. */}
       {result && result.belowTargetDays.length > 0 && (
         <div className="mt-3">
-          <Callout tone="warn" title="Jadłospis wychodzi pod celem kalorycznym">
-            {result.belowTargetDays.length} z 7 dni ma ponad 5% mniej kalorii, niż zakłada Twój
-            cel. Baza przepisów jest pisana pod około 2750 kcal dziennie — cztery posiłki sumują
-            się do ~2550 kcal plus 200 kcal rezerwy na przekąskę, a porcje skalujemy najwyżej
-            o 25%. Daje to od ~2110 do ~3385 kcal dziennie; poza tym zakresem baza nie ma czym
-            dobić. Możesz wybrać w profilu preset 2500 albo 3000 kcal, pod które ta baza jest
-            napisana, albo dopisać do niej cięższe przepisy.
-          </Callout>
+          <Callout
+            tone="warn"
+            title={`${result.belowTargetDays.length} z 7 dni wychodzi pod celem kalorycznym`}
+          />
         </div>
       )}
     </Card>
