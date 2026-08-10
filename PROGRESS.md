@@ -17,9 +17,9 @@ udawać, że opisuje ten kod.
 | Sprawdzenie | Wynik |
 |---|---|
 | `npx tsc -b --force --noEmit` | ✅ bez błędów |
-| `npm test` | ✅ **622/622 testy** w 17 plikach |
-| `npm run build` | ✅ 5,1 s, precache 14 plików (1057 KiB) |
-| `python scripts/import/import_recipes.py` | ✅ 167 przepisów, maks. odchylenie od celu slotu **1,3%** |
+| `npm test` | ✅ **624/624 testy** w 17 plikach (trzy przebiegi z rzędu) |
+| `npm run build` | ✅ 4,6 s, precache 14 plików (1122 KiB) |
+| `python scripts/import/import_recipes.py` | ✅ 218 przepisów, maks. odchylenie od celu slotu **1,7%** |
 | Podgląd diety (`scripts/dietReport.ts`) | ✅ wszystkie dni w tolerancji, odchylenia < 1% |
 | **Przejście przez aplikację w przeglądarce** | ✅ przy 2500 i przy 3000 kcal — patrz niżej |
 
@@ -186,6 +186,19 @@ wtedy, gdyby wzorzec przestał cokolwiek łapać. Uwaga na `\b`: w JavaScripcie
 granica słowa liczy się po ASCII, więc po „ś" jej nie ma i „zalogowałaś."
 nie zostałoby dopasowane.
 
+### Oba te błędy dało się jeszcze zobaczyć — w `dist/`, nie w kodzie (2026-08-10)
+
+Zgłoszenie „rodzaj żeński wrócił" i „komunikaty mówią o 1600 kcal" przyszło
+z konkretnymi numerami linii, a w tych liniach stał już poprawiony tekst.
+Formy żeńskie i „1600 kcal" siedziały w **zbudowanym `dist/`**: paczka była
+starsza od poprawek, więc każdy, kto patrzył na zbudowaną aplikację (a tak
+jest wdrażana — patrz `render.yaml`), widział wersję przed naprawą.
+
+Wniosek jest inny niż przy samych tekstach: `uiText.test.ts` skanuje `src/`
+i słusznie, bo `dist/` jest generowany. Ale zielony test nie znaczy, że
+wdrożone jest to, co przetestowane. **Po każdej poprawce tekstu trzeba przebudować
+paczkę**, inaczej naprawa istnieje tylko w repozytorium.
+
 ### Zmierzona wydajność solvera (poprzednia liczba była nieprawdziwa)
 
 Ten plik mówił „tydzień liczy się ~2 s na maszynie deweloperskiej". Pomiar:
@@ -198,6 +211,96 @@ z „Następnego kroku".
 kompozytuje klatek (zrzut ekranu nie działa), więc oba ekrany sprawdzają
 wyłącznie testy montujące prawdziwy `App` na podstawionym IndexedDB. Aplikacja
 wstaje bez błędów w konsoli.
+
+---
+
+## Kuchnia azjatycka: 51 obiadów i 47 produktów (2026-08-10)
+
+Źródło: `Przepisy_Kuchnia_Azjatycka_Obiady.xlsx` (chińska, koreańska, japońska,
+tajska, wietnamska) plus `produkty_azjatyckie_do_dodania.json`. Obiadów jest
+teraz **93**, przepisów w bazie **218**, produktów **196**.
+
+**Arkusz miał dwie wersje — 2500 i 3000 kcal — i wzięliśmy JEDNĄ.** Nazwy dań
+i listy składników są w obu identyczne, różni je tylko gramatura, a wielkość
+porcji i tak dobiera importer pod cel slotu (765 kcal). Wzięcie obu dałoby 102
+pozycje, z których połowa byłaby tym samym daniem — dla solvera dwie różne
+opcje, dla jedzącego jedna. Wybrany jest arkusz **2500**, bo wymaga skalowania
+W GÓRĘ (×1,11): skalowanie w dół wchodzi w podłogi `minGram` i wtedy trafienie
+w cel psuje się na tłuszczach. Zmierzone: oba arkusze dają maks. odchylenie
+1,1% na obiadach, więc wybór nie kosztuje dokładności.
+
+**Trzy produkty odpadły jako duplikaty istniejących.** „Ryż basmati (suchy)"
+i „Makaron ryżowy (suchy)" miały makro co do dziesiątej części takie samo jak
+„Ryż basmati" i „Makaron ryżowy" — dwie nazwy jednego worka ryżu rozbiłyby
+listę zakupów na dwie pozycje, każdą z połową ilości. To dokładnie ta klasa
+błędu, dla której trzymamy pustą tabelę w `canonical.ts`. Sufiks „(suchy)"
+zdjęliśmy ze WSZYSTKICH nowych nazw, bo `produkty.json` deklaruje ten stan
+dla całej tabeli w swoim `_opis`.
+
+„Dymka (szczypior)" i „Sos sojowy ciemny" zostały mimo identycznego makra
+z „Szczypiorkiem" i „Sosem sojowym" — to naprawdę inne produkty i inna półka,
+a 30 g dymki jest składnikiem, nie posypką.
+
+**Przyprawy odduplikowane od składników.** Arkusz wypisywał czosnek, imbir czy
+sos ostrygowy w obu kolumnach, więc karta posiłku pokazywałaby czosnek dwa
+razy: raz z gramaturą, raz jako „pasująca przyprawa".
+
+### Co ta baza wyciągnęła z kodu — cztery błędy, dwa zastane
+
+Wszystkie znalazły się przez URUCHOMIENIE, nie przez czytanie, i wszystkie mają
+teraz test.
+
+1. **Wołowina i wieprzowina były WEGAŃSKIE.** `MEAT_TERMS` miało `wolowin`
+   i `wolowa`, a w tabeli stoi „Rostbef wołowy" — żaden nie trafiał. To błąd
+   ZASTANY, tylko niewidoczny: dopóki wołowych obiadów było mało, nikt nie
+   sprawdził. „Chude mielone wieprzowe" przyszło z bazą azjatycką i dało to
+   samo. Nazwa dania też nie ratowała: `mieso` nie jest fragmentem `miesem`.
+   Teraz `wolow`, `wieprz` i `rostbef`.
+2. **Napoje roślinne dostawały laktozę.** `mleko` i `mleczko` są terminami
+   laktozy, więc „Mleko migdałowe bez cukru" (zastane) i „Mleczko kokosowe
+   lekkie" (nowe, 4 przepisy) wypadały ze ścieżki bez laktozy — a stoją w bazie
+   właśnie po to, żeby ta ścieżka miała z czego wybierać. `hits` nie rozstrzyga
+   po najdłuższym trafieniu jak `aisleFor`, więc dłuższy termin by nie pomógł;
+   wykluczenie jest wprost, na `PLANT_MILK_TERMS`, i dotyczy JEDNEJ nazwy,
+   nie całego przepisu (owsianka na mleku migdałowym z jogurtem ma laktozę).
+3. **Filtr przypraw zdejmował z listy zakupów rzeczy do kupienia.**
+   „Bazylia tajska świeża" (12 g), „Kolendra świeża" (10 g), „Pasta curry"
+   (25 g) i „Kostka curry japońskiego" trafiają w `isSeasoning` nazwą, a są
+   pęczkiem i słoikiem. Reguła jest teraz taka sama, jaką projekt od początku
+   stosował do czosnku: **przyprawa wypada tylko bez gramatury**. Zważona
+   ilość JEST decyzją, ile kupić. Druga linia obrony zostaje — „Sól morska"
+   dopisana jako doprawienie nadal nie wejdzie na listę.
+4. **Dwie pozycje stały w złym dziale**, obie przez najdłuższe trafienie:
+   „Olej sezamowy" wśród orzechów (`sezam` bije `olej`) i „Mleczko kokosowe"
+   w nabiale (`mleczko`). Oba dopisane wprost, jak wcześniej warianty pesto.
+
+**Test, który to złapał, jest krzyżowy i zostaje na stałe:** żaden przepis
+uznany za wegetariański nie może mieć składnika z działu „Mięso i ryby".
+Krzyżuje DWIE niezależne listy słów kluczowych z tego repozytorium — działy
+sklepowe i składniki zwierzęce. Osobno żadna nie pokazuje luki; dopiero
+niezgodność między nimi mówi, że jedna czegoś nie widzi. Przeglądem tego nie
+da się zrobić: trzeba porównać dwie listy po sto pozycji.
+
+Czujnik ścieżki roślinnej zadziałał tak, jak go opisano („gdyby ktoś dopisał
+wegetariańskie obiady, ten test zacznie padać") — tylko powiedział coś innego,
+niż się spodziewaliśmy: próg 4 pękł na 6, ale dwa z tych „nowych wegetariańskich
+obiadów" były daniami z wieprzowiną. Po naprawie doszedł JEDEN prawdziwy
+(„Indonezyjski tempeh w sosie sambal"), więc próg to 5, a obiadów
+wegetariańskich są cztery na dziewięćdziesiąt trzy — ta sama wada bazy, tylko
+rozcieńczona.
+
+### Rzeczy pilnowane inaczej, niż wyglądało
+
+- **Nori miało `minGram` 2**, a projekt ma twardą regułę „żadna gramatura poniżej
+  4 g" — bo tyle da się odmierzyć w kuchni. Podniesione do 4.
+- **`label_for` w importerze opisywał zachowanie, którego aplikacja nie ma.**
+  Twierdził, że połówki pokazuje jako „1/2 szt", bo „0,5 szt jajka czyta się jak
+  błąd zaokrąglenia". Tymczasem `formatIngredientAmount` czyta `label` tylko przy
+  ilości `null` — przy podanej formatuje liczbę sam, bo solver skaluje gramatury
+  w locie i zapisana etykieta byłaby nieprawdziwa. Na ekranie jest więc „0,5 szt"
+  i tak ma być: pilnuje tego `format.test.ts`, a „0,5 kromki" obok trzyma tę samą
+  konwencję. Pierwsze przepisy z połówką jajka (kuchnia azjatycka) pokazały, że
+  te dwa opisy sobie przeczą; poprawiony jest ten w importerze.
 
 ---
 
@@ -236,9 +339,11 @@ wstaje bez błędów w konsoli.
 
 ## Zmierzone właściwości bazy
 
-Dzień z bazy przy porcji ×1,0: **2550 kcal, 150 g białka, 66 g tłuszczu,
-338 g węglowodanów** (plus przekąska 200 kcal → 2750 kcal).
-Zakres przy skalowaniu 0,75–1,25: **2110–3385 kcal dziennie**.
+Dzień z bazy przy porcji ×1,0: **2548 kcal, 157 g białka, 70 g tłuszczu,
+322 g węglowodanów** (plus przekąska 200 kcal → 2748 kcal).
+Zakres przy skalowaniu 0,75–1,25: **2111–3385 kcal dziennie**.
+Liczby drgnęły po dopisaniu 51 obiadów azjatyckich — są bogatsze w białko
+(średnia obiadu 51 g wobec 46 g wcześniej), więc dzień ma go o 7 g więcej.
 
 Przejście przez aplikację w przeglądarce, świeży profil (86 kg, 182 cm, 1990):
 
@@ -253,10 +358,12 @@ chleb przeliczony na kromki.
 
 ## Świadome ograniczenia bazy
 
-- **Dieta wegańska nie ma rozwiązania** — wegańskich śniadań i obiadów nie ma
-  ani jednego, więc solver zwraca `null` zamiast udawać, że coś ułożył.
-- **Wegetariańska trafia w makra**, ale obiadów ma trzy na czterdzieści dwa,
-  więc tydzień stoi na trzech obiadach zamiast siedmiu.
+- **Dieta wegańska nie ma rozwiązania** — wegańskich śniadań nie ma ani jednego,
+  więc solver zwraca `null` zamiast udawać, że coś ułożył.
+- **Wegetariańska trafia w makra**, ale obiadów ma cztery na dziewięćdziesiąt
+  trzy, więc tydzień stoi na czterech obiadach zamiast siedmiu. Baza azjatycka
+  dołożyła tu dokładnie jedną pozycję — resztę jej 51 obiadów stanowi mięso,
+  ryba lub owoce morza.
 - **Laktoza plus gluten razem kasują cały slot śniadaniowy** — śniadania stoją
   na nabiale i pieczywie.
 
@@ -285,8 +392,14 @@ Nic nie jest zablokowane — aplikacja działa. Do rozważenia, w kolejności wa
    a `tsc` nie widzi brakujących zależności efektu ani pływających promisów.
    To jedyna pozycja z tej listy, która zapobiega powstawaniu następnych —
    patrz rodzaj żeński, znaleziony dwa razy przeglądem, a nie narzędziem.
-5. **Wegetariańskie obiady** — trzy na czterdzieści dwa to za mało, żeby ta
-   ścieżka była użyteczna dłużej niż tydzień.
+   Uwaga po dopisaniu bazy azjatyckiej: linter nie złapałby ANI JEDNEGO
+   z czterech błędów, które ta baza wyciągnęła. Wszystkie były niezgodnością
+   między dwiema listami słów kluczowych albo między regułą i danymi — na to
+   działają testy krzyżowe i uruchomienie, nie analiza składni.
+5. **Wegetariańskie obiady** — cztery na dziewięćdziesiąt trzy to za mało, żeby
+   ta ścieżka była użyteczna dłużej niż tydzień. Baza azjatycka pokazała, że
+   samo dosypywanie przepisów tego nie rozwiąże: dołożyła 51 obiadów i jeden
+   wegetariański. Ta pozycja wymaga celowania, nie objętości.
 6. **Własne przepisy użytkownika.** Dziś każde odstępstwo od bazy jest wpisem
    ręcznym: nie wchodzi na listę zakupów i nie wraca następnym razem — a domowa
    kuchnia ma kilkanaście dań gotowanych co tydzień.

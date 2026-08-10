@@ -314,8 +314,15 @@ def fit_portion(recipe, products):
 def label_for(amount, unit) -> str | None:
     """Zapis ilości do pokazania — „1/2 szt", „1 1/2 szt", „150 g".
 
-    Połówki wypisujemy ułamkiem, bo „0.5 szt jajka" czyta się jak błąd
-    zaokrąglenia, a „1/2 szt" jak przepis.
+    UWAGA: na ekran trafia stąd TYLKO zapis dla ilości `None`.
+    `formatIngredientAmount` (lib/format.ts) czyta `label` wyłącznie wtedy, gdy
+    `amount === null` („2 ząbki", „do smaku") — przy podanej ilości formatuje
+    liczbę sam, bo solver skaluje gramatury w locie i zapisana etykieta byłaby
+    nieprawdziwa. Gałąź ułamkowa poniżej jest więc dla samego pliku danych,
+    a nie dla interfejsu: aplikacja pokaże „0,5 szt", nie „1/2 szt", i tak ma
+    być — pilnuje tego `format.test.ts`, a „0,5 kromki" obok trzyma tę samą
+    konwencję. Pierwsze przepisy z połówką jajka (kuchnia azjatycka) pokazały,
+    że te dwa opisy sobie przeczyły; prawdziwy jest ten z `format.ts`.
     """
     if amount is None:
         return None

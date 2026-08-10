@@ -121,7 +121,7 @@ sekund i wyłapuje rzeczy, których dev server nie pokazuje:
 npm --prefix "C:\AI\Claude\FITKonrad" run build && npm --prefix "C:\AI\Claude\FITKonrad" run preview
 ```
 
-Warto też przed każdym pushem uruchomić testy — 478 sztuk idzie w ok. 8 sekund:
+Warto też przed każdym pushem uruchomić testy — 624 sztuki idą w ok. 17 sekund:
 
 ```bash
 npm --prefix "C:\AI\Claude\FITKonrad" test

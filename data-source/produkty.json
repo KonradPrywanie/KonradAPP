@@ -1124,6 +1124,367 @@
       "tluszcz": 40.0,
       "wegle": 39.5,
       "minGram": 10
+    },
+    {
+      "nazwa": "Bazylia tajska świeża",
+      "kcal": 23,
+      "bialko": 3.2,
+      "tluszcz": 0.6,
+      "wegle": 1.2,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Bulion dashi",
+      "kcal": 5,
+      "bialko": 0.5,
+      "tluszcz": 0.0,
+      "wegle": 0.8,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Bułka panko",
+      "kcal": 380,
+      "bialko": 12.0,
+      "tluszcz": 2.5,
+      "wegle": 77.4,
+      "minGram": 15
+    },
+    {
+      "nazwa": "Chude mielone wieprzowe",
+      "kcal": 150,
+      "bialko": 21.0,
+      "tluszcz": 7.0,
+      "wegle": 0.8
+    },
+    {
+      "nazwa": "Cukier trzcinowy",
+      "kcal": 380,
+      "bialko": 0.0,
+      "tluszcz": 0.0,
+      "wegle": 95.0,
+      "minGram": 5
+    },
+    {
+      "nazwa": "Dymka (szczypior)",
+      "kcal": 30,
+      "bialko": 3.3,
+      "tluszcz": 0.7,
+      "wegle": 2.6,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Edamame",
+      "kcal": 121,
+      "bialko": 12.0,
+      "tluszcz": 5.0,
+      "wegle": 7.0
+    },
+    {
+      "nazwa": "Groszek cukrowy",
+      "kcal": 42,
+      "bialko": 2.8,
+      "tluszcz": 0.2,
+      "wegle": 7.2
+    },
+    {
+      "nazwa": "Grzyby shiitake świeże",
+      "kcal": 34,
+      "bialko": 2.2,
+      "tluszcz": 0.5,
+      "wegle": 5.2
+    },
+    {
+      "nazwa": "Kapusta biała",
+      "kcal": 25,
+      "bialko": 1.3,
+      "tluszcz": 0.1,
+      "wegle": 4.7
+    },
+    {
+      "nazwa": "Kiełki fasoli mung",
+      "kcal": 30,
+      "bialko": 3.0,
+      "tluszcz": 0.2,
+      "wegle": 4.0
+    },
+    {
+      "nazwa": "Kiełki soi",
+      "kcal": 44,
+      "bialko": 5.0,
+      "tluszcz": 1.4,
+      "wegle": 2.9
+    },
+    {
+      "nazwa": "Kimchi",
+      "kcal": 30,
+      "bialko": 1.6,
+      "tluszcz": 0.5,
+      "wegle": 4.8
+    },
+    {
+      "nazwa": "Kluski ryżowe tteok",
+      "kcal": 230,
+      "bialko": 4.0,
+      "tluszcz": 0.5,
+      "wegle": 52.4
+    },
+    {
+      "nazwa": "Kolendra świeża",
+      "kcal": 23,
+      "bialko": 2.1,
+      "tluszcz": 0.5,
+      "wegle": 2.5,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Kostka curry japońskiego",
+      "kcal": 480,
+      "bialko": 6.0,
+      "tluszcz": 30.0,
+      "wegle": 46.5,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Makaron pszenny stir-fry",
+      "kcal": 350,
+      "bialko": 12.0,
+      "tluszcz": 2.0,
+      "wegle": 71.0
+    },
+    {
+      "nazwa": "Makaron soba gryczany",
+      "kcal": 336,
+      "bialko": 14.0,
+      "tluszcz": 1.5,
+      "wegle": 66.6
+    },
+    {
+      "nazwa": "Makaron szklany z batata",
+      "kcal": 340,
+      "bialko": 0.2,
+      "tluszcz": 0.1,
+      "wegle": 84.6
+    },
+    {
+      "nazwa": "Mielone mięso z kurczaka",
+      "kcal": 143,
+      "bialko": 23.0,
+      "tluszcz": 5.5,
+      "wegle": 0.4
+    },
+    {
+      "nazwa": "Mirin",
+      "kcal": 240,
+      "bialko": 0.0,
+      "tluszcz": 0.0,
+      "wegle": 60.0,
+      "jednostka": "ml",
+      "minGram": 8
+    },
+    {
+      "nazwa": "Mleczko kokosowe lekkie",
+      "kcal": 73,
+      "bialko": 0.7,
+      "tluszcz": 7.0,
+      "wegle": 1.8,
+      "jednostka": "ml"
+    },
+    {
+      "nazwa": "Mąka ryżowa",
+      "kcal": 366,
+      "bialko": 6.0,
+      "tluszcz": 1.4,
+      "wegle": 82.3,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Nori (płatki)",
+      "kcal": 350,
+      "bialko": 40.0,
+      "tluszcz": 2.0,
+      "wegle": 43.0,
+      "minGram": 4
+    },
+    {
+      "nazwa": "Ocet ryżowy",
+      "kcal": 20,
+      "bialko": 0.0,
+      "tluszcz": 0.0,
+      "wegle": 5.0,
+      "jednostka": "ml",
+      "minGram": 8
+    },
+    {
+      "nazwa": "Olej sezamowy",
+      "kcal": 884,
+      "bialko": 0.0,
+      "tluszcz": 100.0,
+      "wegle": 0.0,
+      "minGram": 5
+    },
+    {
+      "nazwa": "Orzeszki ziemne prażone",
+      "kcal": 567,
+      "bialko": 26.0,
+      "tluszcz": 49.0,
+      "wegle": 5.5,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Pak choi",
+      "kcal": 13,
+      "bialko": 1.5,
+      "tluszcz": 0.2,
+      "wegle": 1.3
+    },
+    {
+      "nazwa": "Pasta curry",
+      "kcal": 100,
+      "bialko": 2.0,
+      "tluszcz": 3.0,
+      "wegle": 16.2,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Pasta doubanjiang",
+      "kcal": 150,
+      "bialko": 6.0,
+      "tluszcz": 4.0,
+      "wegle": 22.5,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Pasta gochujang",
+      "kcal": 220,
+      "bialko": 5.0,
+      "tluszcz": 2.0,
+      "wegle": 45.5,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Pasta miso",
+      "kcal": 200,
+      "bialko": 12.0,
+      "tluszcz": 6.0,
+      "wegle": 24.5,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Pasta sezamowa tahini",
+      "kcal": 595,
+      "bialko": 17.0,
+      "tluszcz": 54.0,
+      "wegle": 10.2,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Pędy bambusa",
+      "kcal": 20,
+      "bialko": 2.0,
+      "tluszcz": 0.3,
+      "wegle": 2.3
+    },
+    {
+      "nazwa": "Ryż do sushi",
+      "kcal": 355,
+      "bialko": 6.5,
+      "tluszcz": 0.6,
+      "wegle": 80.9
+    },
+    {
+      "nazwa": "Ryż jaśminowy",
+      "kcal": 355,
+      "bialko": 7.0,
+      "tluszcz": 1.0,
+      "wegle": 79.5
+    },
+    {
+      "nazwa": "Ryż kleisty",
+      "kcal": 355,
+      "bialko": 6.5,
+      "tluszcz": 0.6,
+      "wegle": 80.9
+    },
+    {
+      "nazwa": "Sake / wino ryżowe",
+      "kcal": 130,
+      "bialko": 0.0,
+      "tluszcz": 0.0,
+      "wegle": 32.5,
+      "jednostka": "ml",
+      "minGram": 8
+    },
+    {
+      "nazwa": "Sałata lodowa",
+      "kcal": 14,
+      "bialko": 0.9,
+      "tluszcz": 0.1,
+      "wegle": 2.4
+    },
+    {
+      "nazwa": "Sezam",
+      "kcal": 573,
+      "bialko": 17.0,
+      "tluszcz": 50.0,
+      "wegle": 13.8,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Skrobia kukurydziana",
+      "kcal": 380,
+      "bialko": 0.3,
+      "tluszcz": 0.0,
+      "wegle": 94.7,
+      "minGram": 5
+    },
+    {
+      "nazwa": "Sos hoisin",
+      "kcal": 220,
+      "bialko": 2.0,
+      "tluszcz": 3.0,
+      "wegle": 46.2,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Sos ostrygowy",
+      "kcal": 120,
+      "bialko": 2.0,
+      "tluszcz": 0.0,
+      "wegle": 28.0,
+      "minGram": 10
+    },
+    {
+      "nazwa": "Sos rybny",
+      "kcal": 35,
+      "bialko": 5.0,
+      "tluszcz": 0.0,
+      "wegle": 3.8,
+      "jednostka": "ml",
+      "minGram": 8
+    },
+    {
+      "nazwa": "Sos sojowy ciemny",
+      "kcal": 60,
+      "bialko": 6.0,
+      "tluszcz": 0.0,
+      "wegle": 9.0,
+      "jednostka": "ml",
+      "minGram": 10
+    },
+    {
+      "nazwa": "Sos sriracha",
+      "kcal": 100,
+      "bialko": 1.0,
+      "tluszcz": 1.0,
+      "wegle": 21.8,
+      "minGram": 8
+    },
+    {
+      "nazwa": "Tempeh",
+      "kcal": 190,
+      "bialko": 19.0,
+      "tluszcz": 11.0,
+      "wegle": 3.8
     }
   ]
 }

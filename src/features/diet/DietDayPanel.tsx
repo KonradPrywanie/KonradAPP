@@ -197,7 +197,7 @@ export function DietDayPanel({
           /**
            * Słodka przekąska stoi w kolejności dnia jak każdy inny posiłek,
            * ale nie pochodzi z solvera — ma odłożony budżet i pustą treść.
-           * Bez tej pozycji rezerwa 100 kcal byłaby niewidoczna i wyglądałaby
+           * Bez tej pozycji rezerwa 200 kcal byłaby niewidoczna i wyglądałaby
            * jak błąd w wyliczeniach („dlaczego posiłki nie sumują się do celu?").
            */
           if (slot === 'snack') {

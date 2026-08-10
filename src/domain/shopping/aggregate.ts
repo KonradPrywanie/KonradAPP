@@ -136,11 +136,18 @@ const SEASONING_PHRASES: readonly string[] = [
 ]
 
 /**
- * Czy nazwa to przyprawa, której nie kupujemy tygodniowo.
+ * Czy NAZWA wygląda na przyprawę, której nie kupuje się tygodniowo.
  *
  * Czosnek jest wyjątkiem, o który poprosił użytkownik: w przepisach jest
  * składnikiem, kupuje się go świeżego i trafia do warzyw. Granulowany
  * i w proszku to już doprawienie — te wypadają.
+ *
+ * To predykat o samej nazwie i NIE wystarcza, żeby zdjąć pozycję z listy —
+ * o tym decyduje `buildShoppingList`, patrząc też na gramaturę. Powód wyszedł
+ * z bazy obiadów azjatyckich: „Bazylia tajska świeża" (12 g), „Kolendra świeża"
+ * (10 g) i „Pasta curry" (25 g) trafiają tu na słowa `bazylia`, `kolendra`
+ * i `curry`, a są zważonymi składnikami — pęczkiem i słoikiem do kupienia,
+ * nie szczyptą z szafki.
  */
 export function isSeasoning(name: string): boolean {
   const text = normalize(name)
@@ -174,7 +181,19 @@ export function buildShoppingList(input: BuildShoppingListInput): ShoppingListDr
     if (!day) continue
     for (const meal of day.meals) {
       for (const ingredient of meal.ingredients) {
-        if (isSeasoning(ingredient.name)) continue
+        /**
+         * Przyprawa wypada tylko wtedy, gdy jest BEZ GRAMATURY.
+         *
+         * To ta sama reguła, którą `dropFromShoppingList` stosuje do czosnku
+         * („czosnek zważony zostaje, bo to konkretna sztuka do kupienia") —
+         * tylko rozciągnięta na wszystkie przyprawy, bo zważona ilość JEST
+         * decyzją, ile kupić. Sama nazwa tego nie rozstrzyga: „Pasta curry"
+         * i „curry w proszku" różnią się gramaturą, nie słowem.
+         *
+         * Druga linia obrony zostaje: „Sól morska" dopisana do `produkty.json`
+         * jako doprawienie („do smaku", bez ilości) nadal nie wejdzie na listę.
+         */
+        if (ingredient.amount === null && isSeasoning(ingredient.name)) continue
         if (dropFromShoppingList(ingredient)) continue
 
         const name = canonicalIngredientName(ingredient.name)

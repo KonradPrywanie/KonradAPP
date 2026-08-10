@@ -3,6 +3,7 @@ import type { Recipe, WorkoutExercise } from '@/domain/types'
 import { MEAL_SLOTS } from '@/domain/diet/solver'
 import { recipeAllergens, recipeDietStyles } from '@/domain/diet/derive'
 import { dishCategory, DISH_CATEGORY_LABELS } from '@/domain/diet/category'
+import { aisleFor } from '@/domain/shopping/aisles'
 import { SWEET_SNACK, plannedMealTargets } from '@/domain/diet/sweetSnack'
 import { EXERCISE_VIDEOS } from '@/data/exerciseVideos'
 import {
@@ -243,6 +244,67 @@ describe('wyliczanie alergenów i stylu diety', () => {
       'vegetarian',
     ])
     expect(recipeDietStyles(recipeWith(['Tofu wędzone', 'Ryż brązowy']))).toContain('vegan')
+
+    /**
+     * Dwa produkty, które przez to sito przeszły — oba dawały danie MIĘSNE
+     * uznane za wegańskie, czyli błąd w najgorszym możliwym kierunku.
+     *
+     * „Rostbef wołowy" leżał w tabeli od początku: `MEAT_TERMS` miało `wolowin`
+     * i `wolowa`, a nie `wolowy`. „Chude mielone wieprzowe" przyszło z bazą
+     * obiadów azjatyckich. Żadne nie zawiera słowa „mięso", więc nazwa dania
+     * („…z mielonym mięsem") też nie ratowała — `mieso` nie jest fragmentem
+     * `miesem`.
+     */
+    expect(recipeDietStyles(recipeWith(['Rostbef wołowy', 'Ryż basmati']))).toEqual(['omnivore'])
+    expect(recipeDietStyles(recipeWith(['Chude mielone wieprzowe']))).toEqual(['omnivore'])
+    // A mielone roślinne dalej jest roślinne — postać nie decyduje, zwierzę decyduje.
+    expect(recipeDietStyles(recipeWith(['Siemię lniane mielone']))).toContain('vegan')
+  })
+
+  it('KRYTYCZNE: napój roślinny nie jest nabiałem', () => {
+    /**
+     * „Mleko" i „mleczko" są terminami laktozy, więc napoje roślinne dostawały
+     * alergen, którego nie mają — a stoją w bazie właśnie po to, żeby ścieżka
+     * bez laktozy miała z czego wybierać. Migdałowe leżało tu od początku,
+     * kokosowe doszło z bazą obiadów azjatyckich.
+     */
+    expect(recipeAllergens(recipeWith(['Mleko migdałowe bez cukru']))).not.toContain('lactose')
+    expect(recipeAllergens(recipeWith(['Mleczko kokosowe lekkie']))).not.toContain('lactose')
+    expect(recipeDietStyles(recipeWith(['Mleczko kokosowe lekkie', 'Ryż basmati']))).toContain(
+      'vegan',
+    )
+
+    // Nabiał dalej jest nabiałem — także obok napoju roślinnego, bo wykluczenie
+    // dotyczy pojedynczej nazwy składnika, nie całego przepisu.
+    expect(recipeAllergens(recipeWith(['Mleko 2%']))).toContain('lactose')
+    expect(
+      recipeAllergens(recipeWith(['Mleko migdałowe bez cukru', 'Jogurt naturalny'])),
+    ).toContain('lactose')
+  })
+
+  it('KRYTYCZNE: nic z działu „Mięso i ryby" nie stoi w przepisie wegetariańskim', () => {
+    /**
+     * Krzyżowanie DWÓCH niezależnych list terminów z tego repozytorium:
+     * działów listy zakupów (`aisles.ts`) i składników zwierzęcych
+     * (`derive.ts`). Żadna z nich osobno nie pokazuje luki — dopiero
+     * niezgodność między nimi mówi, że jedna czegoś nie widzi.
+     *
+     * Tak wyszły „Rostbef wołowy" i „Chude mielone wieprzowe": dział sklepowy
+     * wiedział, że to mięso, a styl diety nie. Przegląd bazy tego nie łapie,
+     * bo trzeba by porównać dwie listy słów kluczowych po sto pozycji każda.
+     *
+     * Ryb NIE sprawdzamy tą drogą: dla peskatarianina są dozwolone, a dla
+     * wegetarianina odsiewa je osobna reguła `FISH_TERMS`.
+     */
+    const podejrzane: string[] = []
+    for (const recipe of RECIPES) {
+      if (!recipeDietStyles(recipe).includes('vegetarian')) continue
+      for (const ingredient of recipe.ingredients) {
+        if (aisleFor(ingredient.name) !== 'Mięso i ryby') continue
+        podejrzane.push(`${recipe.id}: ${ingredient.name}`)
+      }
+    }
+    expect(podejrzane, `mięso w daniu wegetariańskim:\n${podejrzane.join('\n')}`).toEqual([])
   })
 
   it('wszystkożerca może zjeść każdy przepis z bazy', () => {

@@ -1725,8 +1725,11 @@ describe('shoppingRepo', () => {
 
     expect(list.weekStart).toBe(startOfWeek(START))
     expect(list.items.length).toBeGreaterThan(0)
-    // Przypraw na liście nie ma — zostały w karcie posiłku.
-    expect(list.items.every((i) => !isSeasoning(i.name))).toBe(true)
+    // Przypraw „do smaku" na liście nie ma — zostały w karcie posiłku.
+    // Zważone zostają: „Pasta curry 25 g" i „Kolendra świeża 10 g" trafiają
+    // w ten predykat nazwą, a są pozycją do kupienia. Patrz `buildShoppingList`.
+    const bezIlosci = list.items.filter((i) => i.amount === null)
+    expect(bezIlosci.every((i) => !isSeasoning(i.name))).toBe(true)
   })
 
   it('przebudowa zachowuje odhaczone pozycje', async () => {

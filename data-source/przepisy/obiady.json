@@ -5,7 +5,25 @@
     "To slot, w którym realnie stoi się przy garnkach, więc czas przygotowania",
     "bywa dłuższy niż w pozostałych. Obiad jest też jedynym posiłkiem, który",
     "przy gotowaniu na zapas powtarza się przez dwa dni (`BATCH_LUNCH_DAYS`) —",
-    "warto, żeby dania z tego slotu znosiły odgrzewanie."
+    "warto, żeby dania z tego slotu znosiły odgrzewanie.",
+    "",
+    "POCHODZENIE: pozycje 1–42 powstały razem z projektem. Pozycje 43–93 to",
+    "kuchnia azjatycka (chińska, koreańska, japońska, tajska, wietnamska),",
+    "przeniesiona 2026-08-10 z arkusza `Przepisy_Kuchnia_Azjatycka_Obiady.xlsx`.",
+    "",
+    "Arkusza NIE trzymamy w repozytorium i to jest ta sama decyzja, co przy",
+    "usuniętym `Przepisy_Dieta_1600_kcal_V3.xlsx`: od chwili przeniesienia",
+    "źródłem prawdy jest TEN plik. Arkusz podawał własne makro i własną",
+    "gramaturę dla dwóch diet (2500 i 3000 kcal), więc trzymanie go obok",
+    "znaczyłoby trzy liczby na ten sam obiad, z których dwie są nieaktualne —",
+    "dokładnie to, czemu ta baza ma zapobiegać.",
+    "",
+    "Wzięta była wersja 2500 kcal, bo importer skaluje ją W GÓRĘ (×1,11),",
+    "a skalowanie w dół wchodzi w podłogi `minGram` i psuje trafienie w cel",
+    "na tłuszczach. Nazwy dań i składy są w obu arkuszach identyczne.",
+    "",
+    "Szczegóły i lista błędów, które ta baza wyciągnęła z kodu: PROGRESS.md,",
+    "sekcja „Kuchnia azjatycka\"."
   ],
   "przepisy": [
     {
@@ -2069,6 +2087,3193 @@
         "Wymieszaj kuskus z dynią i rukolą, na wierzch kurczak, migdały i cytryna."
       ],
       "czasMin": 40
+    },
+    {
+      "nazwa": "Kurczak Kung Pao (Gong Bao Ji Ding) z ryżem jaśminowym",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Orzeszki ziemne prażone",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "Pieprz syczuański",
+        "suszone chili",
+        "biały pieprz"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż jaśminowy w proporcji 1:1,5 z wodą.",
+        "Kurczaka pokrój w kostkę 2 cm i wymieszaj ze skrobią oraz łyżką sosu sojowego.",
+        "Wymieszaj sos: sos sojowy, ocet ryżowy, cukier, resztę skrobi i 50 ml wody.",
+        "Na mocno rozgrzanym woku podsmaż suszone chili, czosnek i imbir (30 sekund), dodaj kurczaka i smaż 3 minuty.",
+        "Dorzuć paprykę i białe części dymki, wlej sos i gotuj do zgęstnienia.",
+        "Na koniec wsyp orzeszki, zielone części dymki i mielony pieprz syczuański. Podawaj z ryżem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Wołowina z brokułami w sosie ostrygowym",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 155.0
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 210.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 16.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 3.0
+        }
+      ],
+      "przyprawy": [
+        "biały pieprz"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Brokuł podziel na różyczki i zblanszuj 2 minuty we wrzątku.",
+        "Wołowinę pokrój w cienkie plastry w poprzek włókien i zamarynuj w sosie sojowym ze skrobią (10 min).",
+        "Rozgrzej wok do bardzo wysokiej temperatury i obsmaż mięso partiami po 1 minucie. Odłóż.",
+        "Na tym samym oleju zeszklij cebulę z czosnkiem i imbirem, dodaj brokuł.",
+        "Wróć z mięsem, wlej sos ostrygowy z 60 ml wody i skrobią, mieszaj do zgęstnienia. Skrop olejem sezamowym."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Chow Mein z kurczakiem i chrupiącymi warzywami",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 155.0
+        },
+        {
+          "produkt": "Makaron pszenny stir-fry",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Kiełki fasoli mung",
+          "ilosc": 90.0
+        },
+        {
+          "produkt": "Kapusta biała",
+          "ilosc": 90.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 16.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 3.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        }
+      ],
+      "przyprawy": [
+        "imbir",
+        "biały pieprz"
+      ],
+      "wykonanie": [
+        "Makaron ugotuj o minutę krócej niż podaje opakowanie, odcedź i przelej zimną wodą.",
+        "Kurczaka pokrój w paski i obsmaż na woku na mocnym ogniu 3 minuty. Odłóż.",
+        "Wrzuć marchew w zapałkę, kapustę i czosnek, smaż 2 minuty na dużym ogniu.",
+        "Dodaj makaron, kurczaka, kiełki i sosy. Podsmażaj mieszając 2-3 minuty, aż makaron lekko się przyrumieni.",
+        "Skrop olejem sezamowym i posyp dymką."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Smażony ryż po yangzhousku z krewetkami i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 170.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Groszek cukrowy",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 19.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 4.0
+        }
+      ],
+      "przyprawy": [
+        "Biały pieprz",
+        "czosnek",
+        "imbir"
+      ],
+      "wykonanie": [
+        "Ryż ugotuj dzień wcześniej i schłodź w lodówce - tylko zimny ryż dobrze się smaży.",
+        "Na rozgrzanym woku usmaż roztrzepane jajko na luźną jajecznicę i odłóż.",
+        "Obsmaż krewetki po 1 minucie z każdej strony, odłóż do jajka.",
+        "Podsmaż marchew i groszek 2 minuty, dodaj zimny ryż i rozbijaj grudki łopatką.",
+        "Wróć z jajkiem i krewetkami, dopraw sosem sojowym i białym pieprzem, posyp dymką."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Kurczak z orzechami nerkowca i papryką",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Orzechy nerkowca",
+          "ilosc": 19.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "biały pieprz",
+        "sos hoisin"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Nerkowce upraż na suchej patelni do zezłocenia.",
+        "Kurczaka pokrój w kostkę, wymieszaj ze skrobią i łyżką sosu sojowego.",
+        "Smaż kurczaka na woku 4 minuty na złoto, dodaj czosnek i imbir.",
+        "Wrzuć paprykę i cebulę, smaż 2 minuty - warzywa mają zostać chrupiące.",
+        "Wlej sos ostrygowy z 50 ml wody, zagęść i wsyp nerkowce tuż przed podaniem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Wołowina w czarnym pieprzu z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 175.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Sos sojowy ciemny",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "Grubo mielony czarny pieprz",
+        "imbir",
+        "ciemny sos sojowy"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Wołowinę pokrój w cienkie paski i zamarynuj ze skrobią i sosem sojowym.",
+        "Rozgrzej wok bardzo mocno i obsmaż mięso 90 sekund. Odłóż.",
+        "Podsmaż cebulę i paprykę 2 minuty, dodaj czosnek i pełną łyżeczkę świeżo mielonego czarnego pieprzu.",
+        "Wróć z wołowiną, wlej sos ostrygowy z cukrem i 50 ml wody.",
+        "Zredukuj sos do gęstej konsystencji i od razu podawaj."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Bakłażan po syczuańsku (Yu Xiang Qiezi) z indykiem",
+      "skladniki": [
+        {
+          "produkt": "Bakłażan",
+          "ilosc": 285.0
+        },
+        {
+          "produkt": "Mielona pierś z indyka",
+          "ilosc": 125.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Pasta doubanjiang",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 14.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        }
+      ],
+      "przyprawy": [
+        "Doubanjiang",
+        "chili"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Bakłażana pokrój w grube słupki i posól na 10 minut, potem osusz.",
+        "Podsmaż bakłażana na dobrze rozgrzanym oleju, aż zmięknie i zbrązowieje. Odłóż.",
+        "Na tej samej patelni zrumień mielonego indyka z czosnkiem i imbirem.",
+        "Dodaj doubanjiang, sos sojowy, ocet i cukier - to klasyczny profil yu xiang (słodko-kwaśno-ostry).",
+        "Wróć z bakłażanem, zagęść skrobią i posyp dymką."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Lżejszy kurczak w sosie słodko-kwaśnym z papryką",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 95.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        }
+      ],
+      "przyprawy": [
+        "imbir",
+        "biały pieprz",
+        "papryka słodka"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Kurczaka pokrój w kostkę i oprósz skrobią (zamiast panierki - mniej tłuszczu).",
+        "Obsmaż kurczaka na patelni na złoto z każdej strony i odłóż.",
+        "Podsmaż paprykę i cebulę 2 minuty, dodaj czosnek.",
+        "Wlej passatę z octem, cukrem i 60 ml wody, gotuj 5 minut do zgęstnienia.",
+        "Wróć z kurczakiem, wymieszaj i podawaj z ryżem."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Dan Dan Mian - makaron sezamowy z mielonym mięsem",
+      "skladniki": [
+        {
+          "produkt": "Makaron pszenny stir-fry",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Chude mielone wieprzowe",
+          "ilosc": 120.0
+        },
+        {
+          "produkt": "Pak choi",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Pasta sezamowa tahini",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Sos sriracha",
+          "ilosc": 11.0
+        }
+      ],
+      "przyprawy": [
+        "Pieprz syczuański",
+        "tahini",
+        "chili w oleju"
+      ],
+      "wykonanie": [
+        "W miseczce rozmieszaj tahini z sosem sojowym, octem, czosnkiem i gorącym bulionem na gładki sos.",
+        "Mielone mięso smaż na oleju bez mieszania przez 2 minuty, potem rozdrabniaj i smaż do chrupkości.",
+        "Ugotuj makaron al dente, w ostatniej minucie wrzuć do wody pak choi.",
+        "Sos wlej na dno miski, na to odcedzony makaron i warzywa.",
+        "Na wierzch wyłóż mięso, sriracha i dymkę. Wymieszaj tuż przed jedzeniem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Mrówki wspinające się na drzewo - makaron szklany z mięsem",
+      "skladniki": [
+        {
+          "produkt": "Makaron szklany z batata",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Chude mielone wieprzowe",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Pasta doubanjiang",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 270.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        }
+      ],
+      "przyprawy": [
+        "Doubanjiang",
+        "biały pieprz",
+        "chili",
+        "olej sezamowy"
+      ],
+      "wykonanie": [
+        "Makaron szklany zalej ciepłą wodą na 10 minut i odcedź.",
+        "Zrumień mielone mięso na oleju z czosnkiem i imbirem.",
+        "Dodaj pastę doubanjiang, smaż minutę, wlej bulion i sos sojowy.",
+        "Włóż makaron i poszatkowaną kapustę pekińską, duś 5 minut, aż makaron wchłonie sos.",
+        "Posyp dymką i podawaj od razu."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Dorsz na parze po kantońsku z imbirem i dymką",
+      "skladniki": [
+        {
+          "produkt": "Dorsz filet",
+          "ilosc": 260.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Pak choi",
+          "ilosc": 195.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 24.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 4.0
+        }
+      ],
+      "przyprawy": [
+        "kolendra",
+        "jasny sos sojowy",
+        "biały pieprz"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Filet z dorsza ułóż na talerzu i obłóż plasterkami imbiru.",
+        "Gotuj rybę na parze 8-10 minut, aż mięso będzie płatkować się widelcem.",
+        "Pak choi zblanszuj 2 minuty i ułóż obok ryby.",
+        "Zlej wodę z talerza, polej rybę sosem sojowym z odrobiną cukru i posyp dymką.",
+        "Rozgrzej olej do bardzo wysokiej temperatury i polej nim dymkę - to kluczowy moment tego dania."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Char Siu z indyka z ryżem i pak choi",
+      "skladniki": [
+        {
+          "produkt": "Pierś z indyka",
+          "ilosc": 195.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Pak choi",
+          "ilosc": 165.0
+        },
+        {
+          "produkt": "Sos hoisin",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "Pięć smaków (five spice)",
+        "hoisin",
+        "biały pieprz"
+      ],
+      "wykonanie": [
+        "Wymieszaj marynatę: hoisin, sos sojowy, miód, czosnek, imbir i łyżeczkę przyprawy pięciu smaków.",
+        "Pierś z indyka natnij i zamarynuj minimum 20 minut (najlepiej całą noc).",
+        "Piecz w 200°C przez 20 minut, w połowie smarując pozostałą marynatą.",
+        "Ugotuj ryż, pak choi zblanszuj 2 minuty i skrop olejem.",
+        "Mięso pokrój w plastry i podawaj z ryżem oraz warzywami polanymi sosem z blachy."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Fasolka szparagowa po syczuańsku z mielonym indykiem",
+      "skladniki": [
+        {
+          "produkt": "Fasolka szparagowa",
+          "ilosc": 270.0
+        },
+        {
+          "produkt": "Mielona pierś z indyka",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 18.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "Pieprz syczuański",
+        "suszone chili"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Fasolkę osusz i smaż na suchej, mocno rozgrzanej patelni, aż skórka zacznie pęcherzyć.",
+        "Odłóż fasolkę, wlej olej i zrumień mielonego indyka z czosnkiem, imbirem i chili.",
+        "Wróć z fasolką, dopraw sosem sojowym, octem i cukrem.",
+        "Smaż jeszcze 2 minuty na mocnym ogniu, na koniec posyp mielonym pieprzem syczuańskim."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Moo Goo Gai Pan - kurczak z pieczarkami w białym sosie",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Ryż basmati",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Groszek cukrowy",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Pędy bambusa",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "biały pieprz",
+        "wino ryżowe"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Kurczaka pokrój w cienkie plastry i wymieszaj ze skrobią.",
+        "Obsmaż kurczaka na woku 3 minuty i odłóż.",
+        "Podsmaż pieczarki na mocnym ogniu, aż odparują - dopiero wtedy dodaj resztę warzyw.",
+        "Wróć z kurczakiem, wlej sos ostrygowy z 60 ml wody i zagęść skrobią.",
+        "Sos ma być jasny i lekko kremowy, nie brązowy. Podawaj natychmiast."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Kurczak General Tso w wersji pieczonej",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 190.0
+        },
+        {
+          "produkt": "Skrobia kukurydziana",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 16.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6.0
+        }
+      ],
+      "przyprawy": [
+        "Suszone chili",
+        "sezam",
+        "biały pieprz"
+      ],
+      "wykonanie": [
+        "Kurczaka pokrój w kostkę, obtocz w skrobi i piecz w 210°C przez 18 minut do chrupkości.",
+        "Ugotuj ryż, brokuł zblanszuj 3 minuty.",
+        "Na patelni podsmaż czosnek, imbir i chili na oleju.",
+        "Wlej sos sojowy, ocet, cukier, passatę i 60 ml wody. Gotuj do syropowatej konsystencji.",
+        "Wrzuć upieczonego kurczaka do sosu, wymieszaj i od razu podawaj z ryżem i brokułem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Zupa-obiad wonton z krewetkami i makaronem",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 220.0
+        },
+        {
+          "produkt": "Makaron pszenny stir-fry",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Pak choi",
+          "ilosc": 220.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 520.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "biały pieprz",
+        "kolendra"
+      ],
+      "wykonanie": [
+        "Zagotuj bulion z plastrami imbiru i czosnkiem, gotuj 10 minut i odcedź przyprawy.",
+        "Krewetki wrzuć do bulionu i gotuj 3 minuty, aż zrobią się różowe.",
+        "Wbij roztrzepane jajko cienką strużką, mieszając - powstaną charakterystyczne nitki.",
+        "Makaron ugotuj osobno, pak choi zblanszuj 2 minuty.",
+        "Wyłóż makaron do miski, zalej bulionem z krewetkami, dopraw sosem sojowym i olejem sezamowym."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Bibimbap z wołowiną i jajkiem sadzonym",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 85.0
+        },
+        {
+          "produkt": "Kiełki soi",
+          "ilosc": 85.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Grzyby shiitake świeże",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 21.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        }
+      ],
+      "przyprawy": [
+        "Gochujang",
+        "prażony sezam",
+        "cukier trzcinowy"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż. Wołowinę pokrój w paski i zamarynuj w sosie sojowym z czosnkiem i olejem sezamowym.",
+        "Każde warzywo przygotuj osobno: szpinak zblanszuj i dopraw, kiełki ugotuj 3 minuty, marchew i shiitake podsmaż.",
+        "Obsmaż zamarynowaną wołowinę na mocnym ogniu przez 3 minuty.",
+        "Usmaż jajko sadzone z płynnym żółtkiem.",
+        "W misce ułóż ryż, dookoła warzywa i mięso, na środku jajko. Dodaj gochujang i wymieszaj wszystko przed jedzeniem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Bulgogi bowl - marynowana wołowina po koreańsku",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 155.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 21.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "prażony sezam",
+        "czarny pieprz",
+        "gruszka azjatycka"
+      ],
+      "wykonanie": [
+        "Wołowinę pokrój w bardzo cienkie plastry (łatwiej, gdy mięso jest podmrożone).",
+        "Zamarynuj mięso w sosie sojowym, miodzie, czosnku, imbirze i oleju sezamowym - minimum 20 minut.",
+        "Ugotuj ryż. Warzywa pokrój w paski.",
+        "Na mocno rozgrzanej patelni smaż wołowinę partiami po 2 minuty, żeby się zrumieniła, a nie dusiła.",
+        "Dodaj warzywa na ostatnie 2 minuty, posyp sezamem i podawaj na ryżu."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Jeyuk Bokkeum - ostry schab w gochujang",
+      "skladniki": [
+        {
+          "produkt": "Schab wieprzowy",
+          "ilosc": 155.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 125.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 4.0
+        }
+      ],
+      "przyprawy": [
+        "Gochujang",
+        "gochugaru (płatki chili)",
+        "cukier"
+      ],
+      "wykonanie": [
+        "Schab pokrój w cienkie plastry i zamarynuj w gochujang, sosie sojowym, miodzie, czosnku i imbirze (20 min).",
+        "Ugotuj ryż.",
+        "Na mocno rozgrzanej patelni smaż mięso 4-5 minut, aż marynata zacznie karmelizować.",
+        "Dodaj cebulę i kapustę pekińską, smaż kolejne 3 minuty.",
+        "Skrop olejem sezamowym, posyp dymką i podawaj z ryżem oraz sałatą do zawijania."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Dakgalbi - ostry kurczak z warzywami po koreańsku",
+      "skladniki": [
+        {
+          "produkt": "Udko z kurczaka bez skóry",
+          "ilosc": 155.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 45.0
+        },
+        {
+          "produkt": "Kapusta biała",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Batat",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        }
+      ],
+      "przyprawy": [
+        "Gochujang",
+        "gochugaru",
+        "curry w proszku",
+        "liście perilli"
+      ],
+      "wykonanie": [
+        "Kurczaka pokrój w kostkę i wymieszaj z pastą z gochujang, sosu sojowego, miodu, czosnku i imbiru.",
+        "Odstaw na 20 minut, w tym czasie ugotuj ryż i pokrój warzywa w grube kawałki.",
+        "Na dużej patelni rozgrzej olej, wyłóż kurczaka z marynatą i bataty.",
+        "Smaż 10 minut pod przykryciem, potem dodaj kapustę i cebulę.",
+        "Smaż odkryte kolejne 5 minut, aż sos zgęstnieje. Posyp dymką."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Japchae - makaron szklany z wołowiną i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Makaron szklany z batata",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Grzyby shiitake świeże",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 21.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "prażony sezam",
+        "czarny pieprz",
+        "cukier trzcinowy"
+      ],
+      "wykonanie": [
+        "Makaron z batata ugotuj 6 minut, odcedź i przelej zimną wodą, potem potnij nożyczkami.",
+        "Wołowinę i shiitake zamarynuj w sosie sojowym z czosnkiem i olejem sezamowym.",
+        "Szpinak zblanszuj 30 sekund, odciśnij i dopraw olejem sezamowym.",
+        "Każde warzywo podsmaż osobno na patelni - od najjaśniejszych do najciemniejszych.",
+        "Wszystko wymieszaj w dużej misce z makaronem, resztą sosu sojowego, miodem i sezamem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Kimchi Bokkeumbap - smażony ryż z kimchi i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Kimchi",
+          "ilosc": 190.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Polędwiczka wieprzowa",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Nori (płatki)",
+          "ilosc": 3.0
+        }
+      ],
+      "przyprawy": [
+        "Gochujang",
+        "prażony sezam",
+        "płatki nori"
+      ],
+      "wykonanie": [
+        "Użyj zimnego, wczorajszego ryżu - świeży się sklei.",
+        "Wieprzowinę pokrój w kostkę i zrumień na oleju z czosnkiem.",
+        "Dodaj posiekane kimchi i smaż 4 minuty, aż straci surowość.",
+        "Wsyp ryż, dodaj gochujang i sok z kimchi, smaż mieszając 3 minuty.",
+        "Skrop olejem sezamowym, na wierzch połóż jajko sadzone, posyp sezamem i nori."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Dakdoritang - koreański gulasz z kurczaka i ziemniaków",
+      "skladniki": [
+        {
+          "produkt": "Udko z kurczaka bez skóry",
+          "ilosc": 165.0
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 150.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 35.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 21.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 210.0
+        }
+      ],
+      "przyprawy": [
+        "Gochujang",
+        "gochugaru",
+        "liść laurowy"
+      ],
+      "wykonanie": [
+        "Kurczaka obsmaż w garnku, aż się zarumieni ze wszystkich stron.",
+        "Wymieszaj gochujang, gochugaru, sos sojowy, miód, czosnek i imbir z bulionem.",
+        "Zalej mięso sosem, dodaj ziemniaki i marchew pokrojone w duże kawałki.",
+        "Duś pod przykryciem 25 minut, aż ziemniaki będą miękkie, a sos zgęstnieje.",
+        "Dodaj cebulę na ostatnie 5 minut, posyp dymką i podawaj z ryżem."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Łosoś w glazurze gochujang z ryżem i ogórkiem",
+      "skladniki": [
+        {
+          "produkt": "Łosoś świeży",
+          "ilosc": 130.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 120.0
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 120.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 8.0
+        }
+      ],
+      "przyprawy": [
+        "Gochujang",
+        "prażony sezam"
+      ],
+      "wykonanie": [
+        "Wymieszaj gochujang, sos sojowy, miód i czosnek na gęstą glazurę.",
+        "Łososia posmaruj glazurą i piecz w 200°C przez 12-14 minut.",
+        "Ugotuj ryż, brokuł zblanszuj 3 minuty.",
+        "Ogórka pokrój w cienkie plasterki i zamarynuj w occie ryżowym z odrobiną sezamu.",
+        "Podawaj łososia na ryżu, z brokułem i chrupiącą surówką ogórkową."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Tteokbokki z kurczakiem - lżejsza wersja",
+      "skladniki": [
+        {
+          "produkt": "Kluski ryżowe tteok",
+          "ilosc": 120.0
+        },
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 130.0
+        },
+        {
+          "produkt": "Kapusta pekińska",
+          "ilosc": 110.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 23.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 230.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        }
+      ],
+      "przyprawy": [
+        "Gochujang",
+        "gochugaru",
+        "cukier",
+        "płatki nori"
+      ],
+      "wykonanie": [
+        "Kluski tteok namocz w ciepłej wodzie 10 minut, jeśli są suche lub mrożone.",
+        "Zagotuj bulion z gochujang, gochugaru, sosem sojowym, miodem i czosnkiem.",
+        "Dodaj pokrojonego w paski kurczaka i gotuj 5 minut.",
+        "Wrzuć kluski i kapustę, gotuj 8 minut, aż sos zgęstnieje i oblepi kluski.",
+        "Podawaj z jajkiem ugotowanym na twardo i dymką."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Kongnamul Bap - ryż z kiełkami soi i wołowiną",
+      "skladniki": [
+        {
+          "produkt": "Kiełki soi",
+          "ilosc": 190.0
+        },
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 125.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 19.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Pasta gochujang",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "prażony sezam",
+        "gochugaru"
+      ],
+      "wykonanie": [
+        "Ryż wypłucz i ugotuj z kiełkami soi wyłożonymi na wierzchu - gotują się razem na parze.",
+        "Wołowinę pokrój w paski i zamarynuj w sosie sojowym z czosnkiem.",
+        "Obsmaż mięso na mocnym ogniu 3 minuty razem ze startą marchewką.",
+        "Przygotuj sos: sos sojowy, olej sezamowy, gochugaru, czosnek i dymka.",
+        "Wymieszaj ryż z kiełkami, wyłóż mięso i polej sosem. Posyp sezamem."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Duszona chuda wołowina po koreańsku (Galbijjim)",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 155.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 85.0
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 115.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Grzyby shiitake świeże",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 24.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 240.0
+        }
+      ],
+      "przyprawy": [
+        "ziarna pieprzu",
+        "gruszka azjatycka",
+        "olej sezamowy"
+      ],
+      "wykonanie": [
+        "Wołowinę pokrój w duże kawałki i zblanszuj 5 minut, żeby pozbyć się szumowin. Opłucz.",
+        "Wymieszaj bulion z sosem sojowym, miodem, czosnkiem i imbirem.",
+        "Duś mięso w tym sosie pod przykryciem 35 minut na małym ogniu.",
+        "Dodaj marchew, ziemniaki i shiitake pokrojone w duże kawałki, duś kolejne 20 minut.",
+        "Zdejmij pokrywkę i odparuj sos do lśniącej glazury. Posyp sezamem, podawaj z ryżem."
+      ],
+      "czasMin": 60
+    },
+    {
+      "nazwa": "Oyakodon - miska z kurczakiem i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Udko z kurczaka bez skóry",
+          "ilosc": 130.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Bulion dashi",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 18.0
+        },
+        {
+          "produkt": "Mirin",
+          "ilosc": 18.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 4.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 20.0
+        }
+      ],
+      "przyprawy": [
+        "Dashi",
+        "jasny sos sojowy",
+        "sansho",
+        "mitsuba lub dymka"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż japoński krótkoziarnisty.",
+        "W płaskim rondlu zagotuj dashi z sosem sojowym, mirinem i cukrem.",
+        "Dodaj cebulę pokrojoną w pióra i gotuj 3 minuty, potem włóż kurczaka pokrojonego skośnie.",
+        "Gotuj 5 minut, po czym zalej luźno roztrzepanym jajkiem (nie ubijaj go na jednolitą masę).",
+        "Przykryj na minutę - jajko ma zostać lekko płynne. Zsuń całość na miskę ryżu i posyp dymką."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Gyudon - japońska miska z wołowiną i cebulą",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 165.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 135.0
+        },
+        {
+          "produkt": "Bulion dashi",
+          "ilosc": 165.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Mirin",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Sake / wino ryżowe",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 4.0
+        }
+      ],
+      "przyprawy": [
+        "Dashi",
+        "beni shoga (marynowany imbir)"
+      ],
+      "wykonanie": [
+        "Wołowinę pokrój w bardzo cienkie plastry.",
+        "W rondlu zagotuj dashi, sos sojowy, mirin, sake i cukier.",
+        "Dodaj cebulę w piórach i gotuj 5 minut, aż zmięknie i wchłonie sos.",
+        "Włóż wołowinę, rozdziel plastry i gotuj tylko 3 minuty - dłużej stwardnieje.",
+        "Nałóż na ryż razem z sosem, posyp dymką i sezamem."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Łosoś teriyaki donburi z brokułem",
+      "skladniki": [
+        {
+          "produkt": "Łosoś świeży",
+          "ilosc": 125.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Brokuł",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Mirin",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sake / wino ryżowe",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6.0
+        }
+      ],
+      "przyprawy": [
+        "jasny sos sojowy"
+      ],
+      "wykonanie": [
+        "Wymieszaj sos teriyaki: sos sojowy, mirin, sake, miód i starty imbir.",
+        "Łososia osusz i smaż na patelni skórą do dołu 4 minuty, potem przewróć na 2 minuty.",
+        "Wlej sos na patelnię i redukuj, polewając rybę, aż powstanie lśniąca glazura.",
+        "Ugotuj ryż, brokuł zblanszuj 3 minuty.",
+        "Wyłóż rybę na ryż, polej sosem z patelni, posyp sezamem i dymką."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Yakisoba z kurczakiem i kapustą",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Makaron pszenny stir-fry",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Kapusta biała",
+          "ilosc": 135.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Kiełki fasoli mung",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 16.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Sos hoisin",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Nori (płatki)",
+          "ilosc": 2.0
+        }
+      ],
+      "przyprawy": [
+        "Sos worcestershire",
+        "hoisin",
+        "imbir marynowany",
+        "aonori",
+        "katsuobushi"
+      ],
+      "wykonanie": [
+        "Ugotuj makaron al dente i odcedź.",
+        "Wymieszaj sos yakisoba: sos ostrygowy, hoisin, sos sojowy i łyżkę wody.",
+        "Kurczaka pokrój w paski i smaż na woku 3 minuty na dużym ogniu.",
+        "Dodaj kapustę, marchew i cebulę, smaż 3 minuty, potem wrzuć kiełki.",
+        "Dorzuć makaron i sos, smaż jeszcze 2 minuty. Posyp dymką i płatkami nori."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Pieczony kurczak katsu z ryżem i surówką z kapusty",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 140.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 45.0
+        },
+        {
+          "produkt": "Bułka panko",
+          "ilosc": 24.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 0.5
+        },
+        {
+          "produkt": "Kapusta biała",
+          "ilosc": 140.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 45.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Passata pomidorowa",
+          "ilosc": 24.0
+        }
+      ],
+      "przyprawy": [
+        "Panko",
+        "sos tonkatsu",
+        "musztarda karashi",
+        "sezam"
+      ],
+      "wykonanie": [
+        "Pierś rozbij na równą grubość, obtocz w jajku i panko wymieszanym z łyżeczką oleju.",
+        "Piecz w 210°C przez 20 minut - panierka zrobi się chrupiąca bez smażenia w głębokim tłuszczu.",
+        "Ugotuj ryż. Kapustę poszatkuj bardzo cienko i wymieszaj z marchewką, octem i odrobiną miodu.",
+        "Sos tonkatsu przygotuj z passaty, sosu sojowego, octu i miodu - zredukuj minutę na patelni.",
+        "Kotlet pokrój w paski i podawaj z ryżem, surówką i sosem."
+      ],
+      "czasMin": 35
+    },
+    {
+      "nazwa": "Ramen miso z kurczakiem i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 125.0
+        },
+        {
+          "produkt": "Makaron pszenny stir-fry",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 380.0
+        },
+        {
+          "produkt": "Pasta miso",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Kiełki fasoli mung",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Kukurydza konserwowa",
+          "ilosc": 40.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Grzyby shiitake świeże",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Nori (płatki)",
+          "ilosc": 2.0
+        }
+      ],
+      "przyprawy": [
+        "biały pieprz"
+      ],
+      "wykonanie": [
+        "Jajko gotuj dokładnie 6,5 minuty i natychmiast zahartuj w lodowatej wodzie - żółtko ma zostać kremowe.",
+        "Kurczaka ugotuj w bulionie 12 minut, wyjmij i pokrój w plastry.",
+        "Pastę miso rozprowadź w chochli gorącego bulionu i dopiero potem wlej do garnka - nie gotuj miso.",
+        "Dopraw bulion czosnkiem, imbirem i olejem sezamowym.",
+        "Makaron ugotuj osobno, zalej bulionem i ułóż dodatki: kurczaka, jajko, kiełki, kukurydzę, nori i dymkę."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Japońskie curry z kurczakiem i warzywami",
+      "skladniki": [
+        {
+          "produkt": "Udko z kurczaka bez skóry",
+          "ilosc": 130.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 45.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Ziemniaki",
+          "ilosc": 110.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Kostka curry japońskiego",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 260.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "garam masala",
+        "sos worcestershire"
+      ],
+      "wykonanie": [
+        "Cebulę smaż na oleju 8 minut, aż mocno się skarmelizuje - to podstawa smaku japońskiego curry.",
+        "Dodaj kurczaka i obsmaż, potem marchew i ziemniaki w dużej kostce.",
+        "Zalej bulionem i gotuj 20 minut, aż warzywa zmiękną.",
+        "Zdejmij z ognia, rozpuść kostkę curry i gotuj jeszcze 5 minut na małym ogniu, mieszając.",
+        "Podawaj obok kopczyka ugotowanego ryżu."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Soba z krewetkami i warzywami w sosie sojowym",
+      "skladniki": [
+        {
+          "produkt": "Makaron soba gryczany",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Krewetki",
+          "ilosc": 165.0
+        },
+        {
+          "produkt": "Groszek cukrowy",
+          "ilosc": 95.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Szpinak świeży",
+          "ilosc": 85.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 24.0
+        },
+        {
+          "produkt": "Mirin",
+          "ilosc": 18.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 6.0
+        }
+      ],
+      "przyprawy": [
+        "wasabi"
+      ],
+      "wykonanie": [
+        "Makaron soba ugotuj 4 minuty i koniecznie przepłucz zimną wodą, żeby pozbyć się skrobi.",
+        "Krewetki obsmaż na patelni po 90 sekund z każdej strony z imbirem.",
+        "Dodaj groszek cukrowy i marchew, smaż 2 minuty, na koniec wrzuć szpinak.",
+        "Wymieszaj sos: sos sojowy, mirin, olej sezamowy i 2 łyżki wody.",
+        "Połącz makaron z warzywami, krewetkami i sosem. Posyp sezamem i dymką."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Buta Shogayaki - wieprzowina imbirowa z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Schab wieprzowy",
+          "ilosc": 170.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Kapusta biała",
+          "ilosc": 135.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 21.0
+        },
+        {
+          "produkt": "Mirin",
+          "ilosc": 19.0
+        },
+        {
+          "produkt": "Sake / wino ryżowe",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 65.0
+        }
+      ],
+      "przyprawy": [
+        "Świeży starty imbir",
+        "sezam"
+      ],
+      "wykonanie": [
+        "Zetrzyj imbir na tarce i wymieszaj z sosem sojowym, mirinem, sake i miodem.",
+        "Schab pokrój w bardzo cienkie plastry i zamarynuj 10 minut.",
+        "Rozgrzej patelnię i smaż mięso po 90 sekund z każdej strony, wyjmij.",
+        "Na tej samej patelni zeszklij cebulę, wlej resztę marynaty i zredukuj.",
+        "Wróć z mięsem, obtocz w sosie i podawaj z ryżem oraz górą cienko poszatkowanej surowej kapusty."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Pad Krapow Gai - tajski kurczak z bazylią i jajkiem",
+      "skladniki": [
+        {
+          "produkt": "Mielone mięso z kurczaka",
+          "ilosc": 160.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Fasolka szparagowa",
+          "ilosc": 115.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Bazylia tajska świeża",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 14.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 10.0
+        }
+      ],
+      "przyprawy": [
+        "Bazylia tajska (krapow)",
+        "chili ptasie"
+      ],
+      "wykonanie": [
+        "Czosnek i chili rozetrzyj w moździerzu na grubą pastę.",
+        "Wymieszaj sos: sos ostrygowy, sojowy, rybny i cukier.",
+        "Na mocno rozgrzanym woku podsmaż pastę czosnkowo-chili przez 20 sekund.",
+        "Dodaj mielone mięso, nie mieszaj przez pierwszą minutę, potem rozdrabniaj i smaż 3 minuty.",
+        "Wlej sos, dodaj fasolkę, a na koniec (już poza ogniem) garść bazylii tajskiej. Podawaj z ryżem i jajkiem sadzonym."
+      ],
+      "czasMin": 15
+    },
+    {
+      "nazwa": "Pad Thai z krewetkami - lżejsza wersja",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 170.0
+        },
+        {
+          "produkt": "Makaron ryżowy",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Kiełki fasoli mung",
+          "ilosc": 110.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Orzeszki ziemne prażone",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        }
+      ],
+      "przyprawy": [
+        "Tamaryndowiec",
+        "chili w proszku",
+        "limonka",
+        "prażone orzeszki ziemne"
+      ],
+      "wykonanie": [
+        "Makaron ryżowy namocz w ciepłej (nie wrzącej) wodzie 20 minut, aż będzie giętki.",
+        "Wymieszaj sos: sos rybny, pasta tamaryndowa lub ocet, cukier i 2 łyżki wody.",
+        "Na woku obsmaż krewetki z czosnkiem, odsuń na bok i wbij jajko, rozbełtaj.",
+        "Dodaj odsączony makaron i sos, smaż mieszając 2-3 minuty, aż makaron wchłonie płyn.",
+        "Wrzuć kiełki i dymkę, smaż 30 sekund. Podawaj z orzeszkami, limonką i chili."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Zielone curry z kurczakiem i ryżem jaśminowym",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Mleczko kokosowe lekkie",
+          "ilosc": 120.0
+        },
+        {
+          "produkt": "Bakłażan",
+          "ilosc": 100.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Fasolka szparagowa",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Pasta curry",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Bazylia tajska świeża",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "Zielona pasta curry",
+        "trawa cytrynowa",
+        "liście limonki kaffir",
+        "galangal"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż jaśminowy.",
+        "Na patelni podsmaż pastę curry w łyżce mleczka kokosowego, aż mocno zapachnie (2 minuty).",
+        "Dodaj kurczaka pokrojonego w paski i obsmaż 3 minuty.",
+        "Wlej resztę mleczka kokosowego, dodaj bakłażana, fasolkę i paprykę. Gotuj 10 minut.",
+        "Dopraw sosem rybnym, cukrem i sokiem z limonki, na koniec wrzuć bazylię tajską."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Larb Gai - tajska sałatka z mielonym kurczakiem i ryżem kleistym",
+      "skladniki": [
+        {
+          "produkt": "Mielone mięso z kurczaka",
+          "ilosc": 210.0
+        },
+        {
+          "produkt": "Ryż kleisty",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Sałata lodowa",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Kolendra świeża",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 130.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Mąka ryżowa",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 65.0
+        }
+      ],
+      "przyprawy": [
+        "Prażony mielony ryż (khao khua)",
+        "limonka",
+        "chili",
+        "mięta",
+        "szalotka"
+      ],
+      "wykonanie": [
+        "Ryż kleisty namocz i ugotuj na parze przez 20 minut.",
+        "Mąkę ryżową upraż na suchej patelni do koloru orzechowego - to khao khua, sygnaturowy dodatek larb.",
+        "Mielonego kurczaka gotuj w małej ilości bulionu 5 minut, rozdrabniając widelcem.",
+        "Zdejmij z ognia i wymieszaj z sosem rybnym, sokiem z limonki, cukrem, chili i dymką.",
+        "Dodaj kolendrę i prażony ryż, podawaj z sałatą, ogórkiem i ryżem kleistym."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Tom Yum Goong z makaronem ryżowym",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 230.0
+        },
+        {
+          "produkt": "Makaron ryżowy",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Pieczarki",
+          "ilosc": 175.0
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 580.0
+        },
+        {
+          "produkt": "Mleczko kokosowe lekkie",
+          "ilosc": 85.0
+        },
+        {
+          "produkt": "Pasta curry",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 22.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 20.0
+        },
+        {
+          "produkt": "Kolendra świeża",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 7.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 10.0
+        }
+      ],
+      "przyprawy": [
+        "Trawa cytrynowa",
+        "galangal",
+        "liście limonki kaffir",
+        "pasta nam prik pao",
+        "chili"
+      ],
+      "wykonanie": [
+        "Zagotuj bulion z trawą cytrynową, galangalem i liśćmi limonki, gotuj 10 minut.",
+        "Dodaj pastę chili, pieczarki i pomidory, gotuj 5 minut.",
+        "Wrzuć krewetki i gotuj tylko 3 minuty.",
+        "Zdejmij z ognia, wlej mleczko kokosowe, sos rybny i sok z limonki - kwaśność dodaje się na końcu.",
+        "Makaron ugotuj osobno, zalej zupą i posyp kolendrą."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Bun Cha - wietnamskie klopsiki wieprzowe z makaronem",
+      "skladniki": [
+        {
+          "produkt": "Chude mielone wieprzowe",
+          "ilosc": 170.0
+        },
+        {
+          "produkt": "Makaron ryżowy",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Sałata lodowa",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 115.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Kiełki fasoli mung",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 21.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Kolendra świeża",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 6.0
+        }
+      ],
+      "przyprawy": [
+        "limonka",
+        "chili",
+        "mięta",
+        "trawa cytrynowa"
+      ],
+      "wykonanie": [
+        "Mielone mięso wymieszaj z czosnkiem, sosem rybnym, cukrem i pieprzem. Uformuj małe płaskie kotleciki.",
+        "Grilluj lub smaż kotleciki po 3 minuty z każdej strony, aż mocno się zarumienią.",
+        "Przygotuj nuoc cham: sos rybny, sok z limonki, cukier, czosnek, chili i 100 ml ciepłej wody.",
+        "Makaron ryżowy ugotuj 4 minuty i przelej zimną wodą.",
+        "Podawaj klopsiki w miseczce z sosem, obok makaron, świeże zioła i warzywa do maczania."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Bo Luc Lac - wietnamska wołowina z pieprzem i limonką",
+      "skladniki": [
+        {
+          "produkt": "Rostbef wołowy",
+          "ilosc": 175.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Sałata lodowa",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Pomidor",
+          "ilosc": 110.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 9.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 10.0
+        }
+      ],
+      "przyprawy": [
+        "Grubo mielony czarny pieprz",
+        "limonka",
+        "sól morska"
+      ],
+      "wykonanie": [
+        "Wołowinę pokrój w kostkę 2,5 cm i zamarynuj w sosie sojowym, ostrygowym, miodzie i czosnku (15 min).",
+        "Ugotuj ryż. Przygotuj dip: sok z limonki, sól i dużo grubo mielonego czarnego pieprzu.",
+        "Rozgrzej patelnię do bardzo wysokiej temperatury i smaż mięso 90 sekund, potrząsając patelnią (stąd nazwa \"trzęsąca się wołowina\").",
+        "Dodaj cebulę na ostatnie 30 sekund - ma zostać chrupiąca.",
+        "Wyłóż na sałatę z pomidorami, podawaj z ryżem i dipem limonkowo-pieprzowym."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Nasi Goreng z kurczakiem i jajkiem sadzonym",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 135.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Kapusta biała",
+          "ilosc": 95.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 30.0
+        },
+        {
+          "produkt": "Sos sojowy ciemny",
+          "ilosc": 19.0
+        },
+        {
+          "produkt": "Sos sriracha",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 85.0
+        }
+      ],
+      "przyprawy": [
+        "Kecap manis",
+        "pasta sambal",
+        "szalotka",
+        "kurkuma",
+        "kolendra mielona"
+      ],
+      "wykonanie": [
+        "Użyj zimnego, ugotowanego dzień wcześniej ryżu.",
+        "Kurczaka pokrój w kostkę i obsmaż na woku 3 minuty z czosnkiem.",
+        "Dodaj marchew i kapustę, smaż 2 minuty na mocnym ogniu.",
+        "Wsyp ryż, wlej ciemny sos sojowy (kecap manis) i sambal, smaż mieszając 3 minuty.",
+        "Podawaj z jajkiem sadzonym na wierzchu, plasterkami ogórka i dymką."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Kurczak satay z sosem orzechowym i ryżem",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 155.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 45.0
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Kapusta biała",
+          "ilosc": 85.0
+        },
+        {
+          "produkt": "Masło orzechowe 100%",
+          "ilosc": 19.0
+        },
+        {
+          "produkt": "Mleczko kokosowe lekkie",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 16.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 4.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "Kurkuma",
+        "kolendra mielona",
+        "kumin",
+        "trawa cytrynowa",
+        "sambal"
+      ],
+      "wykonanie": [
+        "Kurczaka pokrój w paski i zamarynuj w kurkumie, kolendrze, kuminie, czosnku i odrobinie oleju (20 min).",
+        "Nabij mięso na patyczki i grilluj na patelni grillowej po 4 minuty z każdej strony.",
+        "Sos: masło orzechowe rozprowadź z mleczkiem kokosowym, sosem sojowym, miodem, limonką i imbirem.",
+        "Podgrzej sos na małym ogniu 3 minuty, aż zgęstnieje.",
+        "Podawaj szaszłyki z ryżem, sosem orzechowym i surówką z ogórka i kapusty."
+      ],
+      "czasMin": 30
+    },
+    {
+      "nazwa": "Wietnamski łosoś w sosie karmelowym z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Łosoś świeży",
+          "ilosc": 150.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Pak choi",
+          "ilosc": 170.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 14.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 11.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Imbir świeży",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 7.0
+        }
+      ],
+      "przyprawy": [
+        "karmel z cukru trzcinowego",
+        "chili",
+        "czarny pieprz"
+      ],
+      "wykonanie": [
+        "W rondlu rozpuść cukier na suchej patelni i doprowadź do bursztynowego karmelu - to serce tego dania.",
+        "Ostrożnie wlej 60 ml wody i sos rybny, wymieszaj z czosnkiem i imbirem.",
+        "Włóż łososia i duś na małym ogniu 8 minut, polewając sosem.",
+        "Ugotuj ryż, pak choi zblanszuj 2 minuty.",
+        "Polej rybę zredukowanym sosem, skrop limonką i posyp dymką."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Singapurski makaron ryżowy z curry i krewetkami",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 170.0
+        },
+        {
+          "produkt": "Makaron ryżowy",
+          "ilosc": 70.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 100.0
+        },
+        {
+          "produkt": "Kiełki fasoli mung",
+          "ilosc": 100.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 75.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 1.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 18.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sos ostrygowy",
+          "ilosc": 12.0
+        }
+      ],
+      "przyprawy": [
+        "Curry w proszku",
+        "kurkuma",
+        "imbir",
+        "biały pieprz",
+        "chili"
+      ],
+      "wykonanie": [
+        "Makaron ryżowy namocz w ciepłej wodzie 10 minut i odcedź.",
+        "Na woku usmaż roztrzepane jajko i odłóż.",
+        "Obsmaż krewetki 2 minuty z czosnkiem, dodaj paprykę i marchew.",
+        "Wsyp pełną łyżkę curry w proszku i smaż 30 sekund, aż zapachnie - to nadaje makaronowi żółty kolor.",
+        "Dodaj makaron, sosy, kiełki i jajko, wymieszaj i smaż 2 minuty. Posyp dymką."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Indonezyjski tempeh w sosie sambal z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Tempeh",
+          "ilosc": 125.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 50.0
+        },
+        {
+          "produkt": "Fasolka szparagowa",
+          "ilosc": 115.0
+        },
+        {
+          "produkt": "Papryka czerwona",
+          "ilosc": 80.0
+        },
+        {
+          "produkt": "Cebula",
+          "ilosc": 60.0
+        },
+        {
+          "produkt": "Sos sojowy ciemny",
+          "ilosc": 18.0
+        },
+        {
+          "produkt": "Sos sriracha",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Miód",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 8.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 10.0
+        },
+        {
+          "produkt": "Orzeszki ziemne prażone",
+          "ilosc": 10.0
+        }
+      ],
+      "przyprawy": [
+        "Sambal oelek",
+        "kecap manis",
+        "szalotka",
+        "galangal"
+      ],
+      "wykonanie": [
+        "Tempeh pokrój w cienkie plastry i zrumień na patelni na złoto z obu stron.",
+        "Odłóż tempeh, na tym samym oleju podsmaż czosnek, cebulę i sambal.",
+        "Dodaj fasolkę i paprykę, smaż 3 minuty.",
+        "Wlej ciemny sos sojowy z miodem i 3 łyżkami wody, wróć z tempehem i obtocz w sosie.",
+        "Skrop limonką, posyp orzeszkami i podawaj z ryżem."
+      ],
+      "czasMin": 25
+    },
+    {
+      "nazwa": "Miska poke z łososiem, krewetkami i edamame",
+      "skladniki": [
+        {
+          "produkt": "Krewetki",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Łosoś świeży",
+          "ilosc": 95.0
+        },
+        {
+          "produkt": "Ryż do sushi",
+          "ilosc": 45.0
+        },
+        {
+          "produkt": "Edamame",
+          "ilosc": 65.0
+        },
+        {
+          "produkt": "Ogórek świeży",
+          "ilosc": 95.0
+        },
+        {
+          "produkt": "Awokado",
+          "ilosc": 40.0
+        },
+        {
+          "produkt": "Marchew",
+          "ilosc": 45.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 17.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 12.0
+        },
+        {
+          "produkt": "Olej sezamowy",
+          "ilosc": 5.0
+        },
+        {
+          "produkt": "Sezam",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Nori (płatki)",
+          "ilosc": 2.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 10.0
+        }
+      ],
+      "przyprawy": [
+        "imbir marynowany",
+        "wasabi"
+      ],
+      "wykonanie": [
+        "Ugotuj ryż do sushi i dopraw go octem ryżowym z odrobiną cukru i soli. Ostudź.",
+        "Łososia w jakości sushi pokrój w kostkę i zamarynuj 10 minut w sosie sojowym z olejem sezamowym.",
+        "Krewetki ugotuj 3 minuty i schłodź.",
+        "Edamame zblanszuj 3 minuty, resztę warzyw pokrój w kostkę lub słupki.",
+        "W misce ułóż ryż, na nim ryby i warzywa w sektorach. Posyp sezamem i nori, skrop limonką."
+      ],
+      "czasMin": 20
+    },
+    {
+      "nazwa": "Filipińskie Chicken Adobo z ryżem",
+      "skladniki": [
+        {
+          "produkt": "Udko z kurczaka bez skóry",
+          "ilosc": 185.0
+        },
+        {
+          "produkt": "Ryż jaśminowy",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Fasolka szparagowa",
+          "ilosc": 130.0
+        },
+        {
+          "produkt": "Sos sojowy",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Ocet ryżowy",
+          "ilosc": 25.0
+        },
+        {
+          "produkt": "Czosnek",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Cukier trzcinowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 6.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 150.0
+        },
+        {
+          "produkt": "Dymka (szczypior)",
+          "ilosc": 20.0
+        }
+      ],
+      "przyprawy": [
+        "Liść laurowy",
+        "ziarna czarnego pieprzu"
+      ],
+      "wykonanie": [
+        "Kurczaka zamarynuj w sosie sojowym, occie, czosnku i liściach laurowych na 20 minut.",
+        "Obsmaż mięso na patelni ze wszystkich stron, marynatę zachowaj.",
+        "Wlej marynatę z bulionem i ziarnami pieprzu, duś pod przykryciem 25 minut.",
+        "Zdejmij pokrywkę i redukuj sos 10 minut, aż zrobi się lśniący i gęsty.",
+        "Podawaj z ryżem i zblanszowaną fasolką, polane sosem."
+      ],
+      "czasMin": 40
+    },
+    {
+      "nazwa": "Malezyjska laksa z kurczakiem - lżejsza wersja",
+      "skladniki": [
+        {
+          "produkt": "Pierś z kurczaka",
+          "ilosc": 145.0
+        },
+        {
+          "produkt": "Makaron ryżowy",
+          "ilosc": 55.0
+        },
+        {
+          "produkt": "Mleczko kokosowe lekkie",
+          "ilosc": 125.0
+        },
+        {
+          "produkt": "Bulion warzywny",
+          "ilosc": 315.0
+        },
+        {
+          "produkt": "Kiełki fasoli mung",
+          "ilosc": 85.0
+        },
+        {
+          "produkt": "Pak choi",
+          "ilosc": 105.0
+        },
+        {
+          "produkt": "Pasta curry",
+          "ilosc": 21.0
+        },
+        {
+          "produkt": "Sos rybny",
+          "ilosc": 13.0
+        },
+        {
+          "produkt": "Sok z limonki",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Kolendra świeża",
+          "ilosc": 15.0
+        },
+        {
+          "produkt": "Jajko",
+          "ilosc": 0.5
+        },
+        {
+          "produkt": "Olej rzepakowy",
+          "ilosc": 5.0
+        }
+      ],
+      "przyprawy": [
+        "Pasta laksa",
+        "trawa cytrynowa",
+        "galangal",
+        "kurkuma",
+        "liście limonki"
+      ],
+      "wykonanie": [
+        "Podsmaż pastę curry na oleju przez 2 minuty, aż uwolni aromat.",
+        "Wlej bulion i gotuj 10 minut z trawą cytrynową.",
+        "Dodaj kurczaka pokrojonego w paski i gotuj 6 minut.",
+        "Wlej mleczko kokosowe i sos rybny, podgrzej bez gotowania.",
+        "Makaron ugotuj osobno, zalej zupą, dodaj kiełki, pak choi, pół jajka i kolendrę. Skrop limonką."
+      ],
+      "czasMin": 30
     }
   ]
 }

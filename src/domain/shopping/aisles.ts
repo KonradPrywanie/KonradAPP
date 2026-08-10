@@ -29,6 +29,11 @@ const RULES: readonly (readonly [string, readonly string[]])[] = [
       'kurczak', 'indyk', 'wolowin', 'wolowa', 'schab', 'poledwic', 'cielec', 'krolik',
       'kacz', 'szynka', 'mieso', 'kielbas', 'dorsz', 'losos', 'pstrag', 'sandacz',
       'makrela', 'tunczyk', 'krewetk', 'surimi', 'paluszki krabowe', 'rostbef', 'mintaj',
+      // Kuchnia azjatycka: „Chude mielone wieprzowe" nie zawiera słowa „mięso".
+      // NIE `mielone`: dopasowanie wygrywa najdłuższym trafieniem, więc siedem
+      // znaków „mielone" bije sześć znaków „siemie" i „Siemię lniane mielone"
+      // wędrowało z orzechów do mięsa.
+      'wieprz',
     ],
   ],
   [
@@ -48,6 +53,12 @@ const RULES: readonly (readonly [string, readonly string[]])[] = [
     [
       'kasza', 'ryz', 'makaron', 'penne', 'spaghetti', 'tagliatelle', 'swiderki', 'udon',
       'platki', 'maka', 'komosa', 'proszek budyniowy', 'kuskus', 'bulgur', 'otreby',
+      // Skrobia kukurydziana stoi na tej samej półce co mąki, a reguła
+      // `kukurydza` jej nie łapie — w nazwie jest „kukurydziana".
+      'skrobia', 'soba',
+      // Nori to suchy towar z tej samej półki. Wprost, bo bez tego dział brałby
+      // się z „(płatki)" w nazwie — czyli z nawiasu, nie z produktu.
+      'nori',
     ],
   ],
   [
@@ -55,7 +66,7 @@ const RULES: readonly (readonly [string, readonly string[]])[] = [
     [
       'fasola', 'ciecierzyc', 'soczewica', 'edamame', 'tofu', 'hummus', 'orzech', 'orzeszki',
       'migdal', 'sezam', 'slonecznik', 'pestki', 'siemie', 'chia', 'falafel', 'kielki',
-      'wiorki kokosowe',
+      'wiorki kokosowe', 'tempeh',
     ],
   ],
   [
@@ -68,14 +79,21 @@ const RULES: readonly (readonly [string, readonly string[]])[] = [
       'pesto zielone', 'pesto bazyliowe', 'salsa pomidorowa', 'sos teriyaki', 'ocet jablkowy',
       'oliwki', 'pieprz zielony', 'ogorek kiszony', 'ogorek konserwowy', 'surowka',
       'buraczki', 'burak gotowany', 'teriyaki', 'pasta curry', 'czerwona pasta curry',
+      // Kuchnia azjatycka — słoiki i butelki, nie warzywa: kimchi jest kiszone
+      // jak ogórek konserwowy, a pasty sojowe stoją obok sosów.
+      'kimchi', 'mirin', 'gochujang', 'doubanjiang', 'miso', 'curry',
+      // Puszka, nie lodówka: `mleczko` wysyłało kokosowe do nabiału.
+      'mleczko kokosowe',
     ],
   ],
-  ['Tłuszcze', ['oliwa', 'olej', 'awokado']],
+  // `olej sezamowy` wprost, bo inaczej `sezam` (5 znaków) bije `olej` (4)
+  // i butelka oleju ląduje między orzechami a pestkami.
+  ['Tłuszcze', ['oliwa', 'olej', 'awokado', 'olej sezamowy']],
   [
     'Dodatki i słodycze',
     [
       'erytrytol', 'miod', 'kakao', 'cynamon', 'odzywka bialkowa', 'woda', 'lod',
-      'ekstrakt', 'przyprawa', 'wanili', 'syrop', 'czekolada',
+      'ekstrakt', 'przyprawa', 'wanili', 'syrop', 'czekolada', 'cukier',
     ],
   ],
   [
@@ -85,7 +103,9 @@ const RULES: readonly (readonly [string, readonly string[]])[] = [
       'szpinak', 'salata', 'rukola', 'roszponka', 'mix salat', 'cebula', 'por', 'seler',
       'burak', 'banan', 'jablko', 'truskawk', 'malin', 'borowk', 'jagod', 'kiwi', 'mango',
       'pomarancz', 'mandarynk', 'brzoskwin', 'ananas', 'limonka', 'cytryn', 'pietruszka',
-      'koper', 'szczypiorek', 'bazyli', 'imbir', 'czosnek', 'fasolka szparagowa', 'groszek',
+      // `szczypior`, nie `szczypiorek`: obok „Szczypiorku" stoi teraz
+      // „Dymka (szczypior)", a krótszy trzon łapie oba.
+      'koper', 'szczypior', 'bazyli', 'imbir', 'czosnek', 'fasolka szparagowa', 'groszek',
       'pieczark', 'baklazan', 'marakuja', 'wisnie', 'sliwki', 'owoce', 'kapust', 'natka',
       'mieszanka warzyw', 'marchewka', 'sok z cytryny',
       // Dopisane po przejrzeniu CAŁEJ tabeli produktów — bez nich te pozycje
@@ -93,6 +113,9 @@ const RULES: readonly (readonly [string, readonly string[]])[] = [
       // `limonk`, nie `limonka`: w przepisach stoi „Sok z limonki".
       'rzodkiew', 'winogron', 'limonk', 'gruszk', 'kalafior', 'dynia', 'rodzynk',
       'daktyl',
+      // Warzywa i zioła świeże z kuchni azjatyckiej — dopisane razem z bazą
+      // obiadów azjatyckich, tą samą drogą: przez wykaz składników bez działu.
+      'dymka', 'kolendra', 'grzyb', 'shiitake', 'pak choi', 'bambus',
     ],
   ],
 ]

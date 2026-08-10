@@ -203,9 +203,21 @@ describe('buildShoppingList', () => {
      * Filtr zostaje mimo to, bo jest drugą linią obrony: dopisanie „Sól morska"
      * do `produkty.json` byłoby błędem, którego nikt nie zauważy inaczej niż
      * po kilogramie soli na liście zakupów.
+     *
+     * Liczą się składniki BEZ GRAMATURY, bo tylko takie `buildShoppingList`
+     * zdejmuje z listy. Zważone nazwy trafiające w ten predykat w bazie są —
+     * „Bazylia tajska świeża" (12 g), „Kolendra świeża" (10 g), „Pasta curry"
+     * (25 g), „Kostka curry japońskiego" — i mają na liście zostać: to pęczek
+     * i słoik do kupienia. Gdyby test patrzył na wszystkie nazwy, wymuszałby
+     * albo usunięcie tych składników z bazy, albo osłabienie predykatu, który
+     * ma chronić od strony soli.
      */
-    const names = [...new Set(RECIPES.flatMap((r) => r.ingredients.map((i) => i.name)))]
-    const dropped = names.filter(isSeasoning)
+    const unweighed = [
+      ...new Set(
+        RECIPES.flatMap((r) => r.ingredients.filter((i) => i.amount === null).map((i) => i.name)),
+      ),
+    ]
+    const dropped = unweighed.filter(isSeasoning)
     expect(dropped, `przyprawa wśród składników: ${dropped.join(', ')}`).toEqual([])
   })
 

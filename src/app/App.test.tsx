@@ -841,8 +841,13 @@ describe('ekran Zakupy', () => {
       items.filter((i) => i.unit === 'g').reduce((sum, i) => sum + (i.amount ?? 0), 0)
     // Ilości spadają na pewno; ile POZYCJI zniknie, zależy od tego, czy dany
     // składnik wraca w innych dniach — dlatego liczby pozycji nie zgadujemy.
+    //
+    // Stało tu jeszcze `visible.length < list.items.length` i to było zgadywanie
+    // wbrew powyższemu zdaniu: jeśli KAŻDY składnik zjedzonego posiłku wraca
+    // w innym dniu tygodnia, to żadna pozycja nie znika — spadają tylko ilości.
+    // Który posiłek wypada na dzisiaj, zależy od `todayIso()`, więc asercja
+    // przechodziła albo nie w zależności od dnia uruchomienia testu.
     expect(grams(visible)).toBeLessThan(grams(list.items))
-    expect(visible.length).toBeLessThan(list.items.length)
 
     renderAt('/zakupy')
     await screen.findByText('Lista zakupów')

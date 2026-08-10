@@ -310,10 +310,15 @@ describe('wykluczenia żywieniowe', () => {
 /**
  * ZNANE OGRANICZENIE: ścieżka roślinna w tej bazie jest cienka.
  *
- * Wegańskich przepisów nie ma praktycznie wcale (0 śniadań, 0 obiadów),
- * a wegetariańskich obiadów jest trzy na czterdzieści dwa. Baza była pisana pod
- * dietę mięsno-rybną przy 2500–3000 kcal i to jest jej właściwość, nie błąd
- * aplikacji. Zapisujemy ją testem, żeby nikt nie założył działania, którego nie ma.
+ * Wegańskich śniadań nie ma ani jednego, a wegetariańskich obiadów są CZTERY
+ * na dziewięćdziesiąt trzy. Baza była pisana pod dietę mięsno-rybną przy
+ * 2500–3000 kcal i to jest jej właściwość, nie błąd aplikacji. Zapisujemy ją
+ * testem, żeby nikt nie założył działania, którego nie ma.
+ *
+ * Baza obiadów azjatyckich (51 pozycji) poprawiła ten stosunek o JEDNĄ pozycję
+ * („Indonezyjski tempeh w sosie sambal") — reszta stoi na mięsie, rybie lub
+ * owocach morza. Trzy obiady na czterdzieści dwa i cztery na dziewięćdziesiąt
+ * trzy to ta sama wada, tylko rozcieńczona.
  */
 describe('ZNANE OGRANICZENIE: ścieżka roślinna', () => {
   it('wegańska nie ma rozwiązania — brak śniadań i obiadów', () => {
@@ -324,13 +329,19 @@ describe('ZNANE OGRANICZENIE: ścieżka roślinna', () => {
     /**
      * Zmierzone, nie założone: pojedynczy dzień wegetariański mieści się
      * w tolerancji co do wszystkich czterech wartości. Ograniczeniem nie jest
-     * więc bilans, tylko WYBÓR — obiadów wegetariańskich są trzy na czterdzieści
-     * dwa, więc tydzień stoi na trzech obiadach zamiast siedmiu i po miesiącu
-     * wykluczenia historii nie mają czego wykluczać.
+     * więc bilans, tylko WYBÓR — obiadów wegetariańskich są cztery na
+     * dziewięćdziesiąt trzy, więc tydzień stoi na czterech obiadach zamiast
+     * siedmiu i po miesiącu wykluczenia historii nie mają czego wykluczać.
      *
      * To jest realna wada bazy i lepiej mieć ją zmierzoną niż opisaną z głowy:
      * gdyby ktoś dopisał wegetariańskie obiady, ten test zacznie padać
      * i wymusi podniesienie progu — czyli dokładnie to, o co chodzi.
+     *
+     * I zadziałało: po dopisaniu obiadów azjatyckich próg 4 pękł na 6. Tylko że
+     * dwa z tych „nowych wegetariańskich obiadów" były daniami z wieprzowiną,
+     * której `MEAT_TERMS` nie rozpoznawało — więc test nie wskazał urosłej bazy,
+     * ale błąd w wykrywaniu mięsa. Patrz `catalog.test.ts`. Po naprawie
+     * doszedł jeden prawdziwy obiad wegetariański, czyli próg 5.
      */
     const day = solveDay(
       input(2600, 80, { restrictions: restrictions({ style: 'vegetarian' }) }),
@@ -346,7 +357,7 @@ describe('ZNANE OGRANICZENIE: ścieżka roślinna', () => {
     const lunches = week.map(
       (entry) => (entry.day as DietDay).meals.find((m) => m.slot === 'lunch')?.recipeId,
     )
-    expect(new Set(lunches).size, `różnych obiadów: ${new Set(lunches).size}/7`).toBeLessThanOrEqual(4)
+    expect(new Set(lunches).size, `różnych obiadów: ${new Set(lunches).size}/7`).toBeLessThanOrEqual(5)
   })
 })
 
